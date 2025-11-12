@@ -135,6 +135,24 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
+    .vietnamese-text-container {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-height: 44px;
+        padding: 6px 0;
+    }
+    .vietnamese-text-container .btn-arrow {
+        margin: 0 6px;
+        width: 32px;
+        height: 32px;
+        font-size: 1.1em;
+    }
+    .vietnamese-text {
+        font-size: 1.1em;
+        padding: 0 4px;
+    }
     body {
         padding: 5px;
     }
