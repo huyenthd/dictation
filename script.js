@@ -13,7 +13,7 @@ let visitedQuestions = new Set(); // Track which questions have been visited (co
 let completedQuestions = {}; // Store completed questions state {questionIndex: {userAnswers, isCorrect, feedback}}
 
 // Load and display version number
-fetch('version.txt')
+fetch('version.txt?t=' + Date.now())
     .then(response => response.text())
     .then(version => {
         const versionBadge = document.querySelector('.version-badge');
