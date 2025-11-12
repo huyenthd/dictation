@@ -135,6 +135,15 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
+    .version-badge {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        right: auto;
+        bottom: auto;
+        z-index: 20;
+        margin: 0;
+    }
     .vietnamese-text-container {
         flex-direction: row !important;
         flex-wrap: nowrap !important;
