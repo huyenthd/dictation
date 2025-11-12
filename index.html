@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Translation Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button id="helpBtn" class="help-btn container-help-btn" aria-label="Keyboard shortcuts">?</button>
+
+        <header>
+            <h1><span id="graduationCap">🎓</span> Dictation</h1>
+        </header>
+
+        <div class="upload-section">
+            <label for="fileInput" class="file-label">
+                📁 Load
+            </label>
+            <input type="file" id="fileInput" accept=".txt" />
+        </div>
+
+        <!-- Controls row: voice left, speed right -->
+        <div class="controls-row">
+            <div class="voice-selector">
+                <label for="voiceSelect" aria-label="Voice">🔊</label>
+                <select id="voiceSelect" aria-label="Voice selection"></select>
+            </div>
+            <div class="speed-selector">
+                <label for="speedSelect" aria-label="Speed">⚡</label>
+                <select id="speedSelect" aria-label="Speech speed">
+                    <option value="0.5">0.5x</option>
+                    <option value="1" selected>1x</option>
+                    <option value="1.25">1.25x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2">2x</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Embedded lessons data to allow loading without a server -->
+        <script id="lessonsData" type="text/plain">
+1. Tôi đang chờ cuộc họp bắt đầu
+- [I] [am] [waiting] [for] [the] [meeting] [to] [start]
+- [I] [am] [waiting] [for] [the] [meeting] [to] [begin]
+
+2. Tôi đã gửi hóa đơn cho khách hàng
+- [I] [have] [sent] [the] [invoice] [to] [the] [client]
+- [I] [have] [sent] [the] [invoice] [to] [the] [customer]
+
+3. Chúng tôi sẽ giao hàng vào ngày mai
+- [We] [will] [deliver] [the] [shipment] [tomorrow]
+- [We] [will] [deliver] [tomorrow]
+
+4. Anh ấy chịu trách nhiệm về ngân sách
+- [He] [is] [responsible] [for] [the] [budget]
+
+5. Cô ấy đã đặt phòng họp
+- [She] [has] [booked] [the] [meeting] [room]
+- [She] [booked] [the] [meeting] [room]
+
+6. Tôi cần xác nhận lịch trình
+- [I] [need] [to] [confirm] [the] [schedule]
+
+7. Vui lòng ký vào hợp đồng
+- [Please] [sign] [the] [contract]
+
+8. Họ đang bảo trì thiết bị
+- [They] [are] [maintaining] [the] [equipment]
+- [They] [are] [doing] [equipment] [maintenance]
+
+9. Tôi sẽ tham dự hội nghị ở Hà Nội
+- [I] [will] [attend] [the] [conference] [in] [Hanoi]
+
+10. Chúng ta phải hoàn thành báo cáo trước hạn chót
+- [We] [must] [complete] [the] [report] [before] [the] [deadline]
+- [We] [have] [to] [finish] [the] [report] [before] [the] [deadline]
+
+11. Tôi đã nhận được thư mời phỏng vấn
+- [I] [have] [received] [the] [interview] [invitation]
+- [I] [received] [the] [interview] [invitation]
+
+12. Cô ấy sẽ làm việc từ xa hôm nay
+- [She] [will] [work] [remotely] [today]
+- [She] [is] [working] [remotely] [today]
+
+13. Vui lòng liên hệ với bộ phận nhân sự
+- [Please] [contact] [the] [human] [resources] [department]
+- [Please] [contact] [the] [HR] [department]
+
+14. Tôi đang đợi phản hồi của sếp
+- [I] [am] [waiting] [for] [the] [supervisor's] [feedback]
+- [I] [am] [waiting] [for] [my] [manager's] [feedback]
+
+15. Chúng tôi đã phê duyệt đề xuất của bạn
+- [We] [have] [approved] [your] [proposal]
+- [We] [approved] [your] [proposal]
+
+16. Cuộc họp đã bị hoãn
+- [The] [meeting] [has] [been] [postponed]
+- [The] [meeting] [was] [postponed]
+
+17. Tôi muốn đặt chỗ cho hai người
+- [I] [would] [like] [to] [make] [a] [reservation] [for] [two] [people]
+- [I] [want] [to] [make] [a] [reservation] [for] [two] [people]
+
+18. Họ đã chuyển đến trụ sở mới
+- [They] [have] [moved] [to] [the] [new] [headquarters]
+- [They] [moved] [to] [the] [new] [headquarters]
+
+19. Vui lòng kiểm tra tồn kho
+- [Please] [check] [the] [inventory]
+- [Please] [check] [the] [stock]
+
+20. Tôi cần in mười bản tài liệu này
+- [I] [need] [to] [print] [ten] [copies] [of] [this] [document]
+- [I] [need] [to] [print] [ten] [copies]
+    </script>
+
+        <div id="game-area" class="hidden">
+            <div class="progress-info">
+                <span id="questionNumber">Question 1/5</span>
+                <span id="score">Score: 0</span>
+            </div>
+
+            <div class="question-section">
+                <div id="vietnameseText" class="vietnamese-text"></div>
+            </div>
+
+            <div class="answer-section">
+                <div id="userAnswer" class="user-answer"></div>
+            </div>
+
+            <div class="words-section">
+                <div id="wordButtons" class="word-buttons"></div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="skipBtn" class="btn btn-skip">Skip</button>
+                <button id="nextBtn" class="btn btn-next hidden">➜ Next</button>
+            </div>
+
+            <div id="feedback" class="feedback hidden"></div>
+        </div>
+
+        <div id="results" class="results hidden">
+            <h2>🎉 Completed!</h2>
+            <p class="final-score">Your score: <span id="finalScore"></span></p>
+            <button id="restartBtn" class="btn btn-restart">🔄 Restart</button>
+        </div>
+
+        <!-- Typing indicator popup -->
+        <div id="typingIndicator" class="typing-indicator hidden">
+            <span id="typingText"></span>
+        </div>
+
+        <!-- Keyboard shortcuts help modal -->
+        <div id="helpModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>⌨️ Keyboard Shortcuts</h2>
+                    <button id="closeModal" class="close-btn">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="shortcut-section">
+                        <h3>🔤 Word Selection</h3>
+                        <div class="shortcut-item">
+                            <kbd>Type letters</kbd>
+                            <span>Auto-match and select words</span>
+                        </div>
+                        <div class="shortcut-item">
+                            <kbd>Backspace</kbd>
+                            <span>Remove last selected word</span>
+                        </div>
+                        <div class="shortcut-item">
+                            <kbd>Shift</kbd>
+                            <span>Listen to active version</span>
+                        </div>
+                    </div>
+
+                    <div class="shortcut-section">
+                        <h3>📋 Version Navigation</h3>
+                        <div class="shortcut-item">
+                            <kbd>Tab</kbd>
+                            <span>Switch to next version</span>
+                        </div>
+                        <div class="shortcut-item">
+                            <kbd>↑</kbd>
+                            <span>Switch to previous version</span>
+                        </div>
+                        <div class="shortcut-item">
+                            <kbd>↓</kbd>
+                            <span>Switch to next version</span>
+                        </div>
+                        <div class="shortcut-item">
+                            <kbd>Esc</kbd>
+                            <span>Skip current question</span>
+                        </div>
+                    </div>
+
+                    <div class="shortcut-section">
+                        <h3>📝 Question Navigation</h3>
+                        <div class="shortcut-item">
+                            <kbd>←</kbd>
+                            <span>Go to previous question (if visited)</span>
+                        </div>
+                        <div class="shortcut-item">
+                            <kbd>→</kbd>
+                            <span>Go to next question (if visited)</span>
+                        </div>
+                        <div class="shortcut-item">
+                            <kbd>Enter</kbd>
+                            <span>Go to next question (when ready)</span>
+                        </div>
+                    </div>
+
+                    <div class="shortcut-tip">
+                        💡 <strong>Tip:</strong> Complete all versions correctly to auto-proceed to next question.
+                        The active version is highlighted with a blue border and arrow (▶). Type to quickly select
+                        words!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
