@@ -30,7 +30,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
-    padding: 20px;
+    padding: 10px;
+    overflow-x: hidden;
 }
 
 .container {
@@ -44,15 +45,25 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
     .container {
-        padding: 8px 2vw 8px 2vw;
+        padding: 12px;
         border-radius: 10px;
-        max-width: 100vw;
+        max-width: 100%;
         min-width: 0;
+        margin: 0;
     }
 
     h1 {
-        font-size: 1.2em;
+        font-size: 1.4em;
+        margin-bottom: 8px;
+    }
+
+    header {
+        margin-bottom: 15px;
     }
 
     .upload-section {
@@ -60,74 +71,105 @@ body {
         gap: 8px;
         justify-content: center;
         flex-wrap: wrap;
+        margin-bottom: 15px;
     }
 
     .file-label {
-        min-width: 90px;
+        min-width: 80px;
         width: auto;
-        height: 38px;
-        padding: 7px 10px;
-        font-size: 0.95em;
+        height: 36px;
+        padding: 8px 12px;
+        font-size: 0.9em;
     }
 
     .help-btn,
     .container-help-btn {
-        min-width: 28px;
-        width: 28px;
-        height: 28px;
-        font-size: 0.95em;
-        top: 8px;
-        right: 8px;
+        min-width: 28px !important;
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.9em !important;
+        top: 8px !important;
+        right: 8px !important;
     }
 
     .controls-row {
         flex-wrap: wrap;
         gap: 8px;
         margin-top: 8px;
+        margin-bottom: 8px;
     }
 
     .voice-selector,
     .speed-selector {
         min-width: 0;
-        width: 100%;
-        padding: 4px 6px;
+        width: calc(50% - 4px);
+        padding: 6px 8px;
         box-sizing: border-box;
-        margin-bottom: 4px;
+    }
+
+    .voice-selector select,
+    .speed-selector select {
+        max-width: 100%;
+        font-size: 0.85em;
     }
 
     .word-btn {
-        padding: 7px 8px;
-        font-size: 0.95em;
+        padding: 8px 10px;
+        font-size: 0.9em;
     }
 
     .progress-info {
         flex-direction: column;
         gap: 6px;
         align-items: flex-start;
-        font-size: 0.95em;
+        font-size: 0.85em;
+        padding: 10px;
+    }
+
+    .vietnamese-text {
+        font-size: 1.3em;
+        padding: 12px;
+    }
+
+    .question-section h2 {
+        font-size: 1.1em;
     }
 }
 
 @media (max-width: 400px) {
+    body {
+        padding: 5px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
     h1 {
         font-size: 1.2em;
     }
 
-    .file-label,
-    .help-btn {
-        min-width: 120px;
-        height: 44px;
-        padding: 8px 10px;
+    .file-label {
+        min-width: 70px;
+        height: 36px;
+        padding: 6px 10px;
+        font-size: 0.85em;
     }
 
     .voice-selector,
     .speed-selector {
-        padding: 4px 8px;
+        padding: 4px 6px;
+        width: calc(50% - 4px);
     }
 
     .word-btn {
-        padding: 8px 10px;
-        font-size: 0.95em;
+        padding: 6px 8px;
+        font-size: 0.85em;
+    }
+
+    .vietnamese-text {
+        font-size: 1.2em;
+        padding: 10px;
     }
 }
 
