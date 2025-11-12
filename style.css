@@ -8,7 +8,7 @@
     background: #f8fafd;
     border-radius: 12px;
     border: 1.5px solid #e0e7ef;
-    box-shadow: 0 2px 8px rgba(102,126,234,0.04);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.04);
     min-height: 48px;
     padding: 8px 0;
 }
@@ -144,6 +144,7 @@ body {
         z-index: 20;
         margin: 0;
     }
+
     .vietnamese-text-container {
         flex-direction: row !important;
         flex-wrap: nowrap !important;
@@ -152,16 +153,19 @@ body {
         min-height: 44px;
         padding: 6px 0;
     }
+
     .vietnamese-text-container .btn-arrow {
         margin: 0 6px;
         width: 32px;
         height: 32px;
         font-size: 1.1em;
     }
+
     .vietnamese-text {
         font-size: 1.1em;
         padding: 0 4px;
     }
+
     body {
         padding: 5px;
     }
