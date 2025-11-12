@@ -1,3 +1,25 @@
+.btn-arrow {
+    background: #f0f4ff;
+    color: #667eea;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 1.3em;
+    margin: 0 6px;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.btn-arrow:active {
+    background: #dbeafe;
+    color: #3b5bdb;
+}
+
 .container {
     position: relative;
 }

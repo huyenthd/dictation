@@ -1,3 +1,27 @@
+// Arrow navigation buttons for mobile
+const prevArrowBtn = document.getElementById('prevArrowBtn');
+const nextArrowBtn = document.getElementById('nextArrowBtn');
+
+if (prevArrowBtn && nextArrowBtn) {
+    prevArrowBtn.addEventListener('click', () => {
+        goToPreviousQuestion();
+    });
+    nextArrowBtn.addEventListener('click', () => {
+        goToNextQuestion();
+    });
+    // Show on mobile only
+    function updateArrowVisibility() {
+        if (window.innerWidth <= 800) {
+            prevArrowBtn.style.display = '';
+            nextArrowBtn.style.display = '';
+        } else {
+            prevArrowBtn.style.display = 'none';
+            nextArrowBtn.style.display = 'none';
+        }
+    }
+    window.addEventListener('resize', updateArrowVisibility);
+    updateArrowVisibility();
+}
 // Global variables
 let lessons = [];
 let currentQuestionIndex = 0;
