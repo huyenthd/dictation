@@ -512,14 +512,9 @@ function setActiveVersion(versionId) {
         const versionContainer = answerArea.parentElement;
         versionContainer.classList.add('active-version');
         activeVersionId = versionId;
-
-        // Scroll to the active version
-        setTimeout(() => {
-            versionContainer.scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            });
-        }, 50);
+        // ĐÃ TẮT scrollIntoView để tránh tự động scroll trên mobile gây khó chịu
+        // Nếu muốn bật lại, chỉ cần bỏ comment dòng dưới:
+        // setTimeout(() => { versionContainer.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 50);
     }
 }
 
