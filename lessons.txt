@@ -1,75 +1,96 @@
-1. Tôi đang chờ cuộc họp bắt đầu
-- [I] [am] [waiting] [for] [the] [meeting] [to] [start]
-- [I] [am] [waiting] [for] [the] [meeting] [to] [begin]
+1. Cảm ơn vì đã mời tôi tham dự cuộc họp kế hoạch hàng năm của các bạn.
+- [Thank] [you] [for] [inviting] [me] [to] [your] [annual] [planning] [meeting] [.]
+- [Thanks] [for] [inviting] [me] [to] [your] [annual] [meeting] [.]
 
-2. Tôi đã gửi hóa đơn cho khách hàng
-- [I] [have] [sent] [the] [invoice] [to] [the] [client]
-- [I] [have] [sent] [the] [invoice] [to] [the] [customer]
+2. Chúng tôi rất vui vì bạn đang quan tâm đến chúng tôi để đáp ứng nhu cầu năng lượng cho nhà máy của các bạn.
+- [We] [are] [pleased] [that] [you] [are] [interested] [in] [our] [services] [to] [meet] [your] [factory’s] [energy] [needs] [.]
+- [We’re] [glad] [you’re] [considering] [us] [to] [help] [with] [your] [factory’s] [power] [supply] [.]
 
-3. Chúng tôi sẽ giao hàng vào ngày mai
-- [We] [will] [deliver] [the] [shipment] [tomorrow]
-- [We] [will] [deliver] [tomorrow]
+3. Công ty của tôi, Stillman Technology, cam kết cung cấp năng lượng tái tạo cho các doanh nghiệp như của các bạn.
+- [My] [company] [,] [Stillman] [Technology] [,] [is] [committed] [to] [providing] [renewable] [energy] [to] [businesses] [like] [yours] [.]
+- [Stillman] [Technology] [is] [dedicated] [to] [supplying] [clean] [energy] [solutions] [to] [companies] [like] [yours] [.]
 
-4. Anh ấy chịu trách nhiệm về ngân sách
-- [He] [is] [responsible] [for] [the] [budget]
+4. Bằng cách chọn lắp đặt các tấm pin mặt trời của chúng tôi
+- [By] [choosing] [to] [install] [our] [solar] [panels]
+- [If] [you] [decide] [to] [go] [with] [our] [solar] [system]
 
-5. Cô ấy đã đặt phòng họp
-- [She] [has] [booked] [the] [meeting] [room]
-- [She] [booked] [the] [meeting] [room]
+5. Các bạn có thể cung cấp năng lượng cho tất cả các cơ sở vật chất của mình bằng năng lượng sạch giá cả phải chăng.
+- [You] [can] [power] [all] [your] [facilities] [with] [clean] [and] [affordable] [energy] [.]
+- [You’ll] [be] [able] [to] [run] [your] [entire] [operation] [on] [low-cost] [renewable] [energy] [.]
 
-6. Tôi cần xác nhận lịch trình
-- [I] [need] [to] [confirm] [the] [schedule]
+6. Và, hàng trăm doanh nghiệp đã đăng ký.
+- [And] [hundreds] [of] [businesses] [have] [already] [signed] [up] [.]
+- [Hundreds] [of] [companies] [have] [joined] [us] [already] [.]
 
-7. Vui lòng ký vào hợp đồng
-- [Please] [sign] [the] [contract]
+7. Tôi chắc chắn các bạn có rất nhiều câu hỏi.
+- [I’m] [sure] [you] [have] [a] [lot] [of] [questions] [.]
+- [I’m] [sure] [you] [guys] [have] [tons] [of] [questions] [.]
 
-8. Họ đang bảo trì thiết bị
-- [They] [are] [maintaining] [the] [equipment]
-- [They] [are] [doing] [equipment] [maintenance]
+8. Nhưng trước tiên, tôi muốn chiếu một video về bài phát biểu mà chủ tịch của chúng tôi đã đưa ra
+- [But] [first] [,] [I’d] [like] [to] [show] [a] [video] [of] [the] [speech] [our] [president] [gave] [.]
+- [But] [first] [,] [I] [want] [to] [play] [a] [video] [of] [our] [president’s] [speech] [.]
 
-9. Tôi sẽ tham dự hội nghị ở Hà Nội
-- [I] [will] [attend] [the] [conference] [in] [Hanoi]
+9. Khi chúng tôi nhận được giải thưởng Eco-Industry tại một hội nghị năm ngoái.
+- [When] [we] [received] [the] [Eco-Industry] [award] [at] [a] [conference] [last] [year] [.]
+- [When] [we] [won] [the] [Eco-Industry] [award] [at] [last] [year’s] [conference] [.]
 
-10. Chúng ta phải hoàn thành báo cáo trước hạn chót
-- [We] [must] [complete] [the] [report] [before] [the] [deadline]
-- [We] [have] [to] [finish] [the] [report] [before] [the] [deadline]
+10. Chào mừng các bạn đến với buổi học hôm nay về khởi nghiệp kinh doanh nhỏ.
+- [Welcome] [to] [today’s] [session] [on] [small] [business] [entrepreneurship] [.]
+- [Welcome] [to] [today’s] [class] [about] [starting] [a] [small] [business] [.]
 
-11. Tôi đã nhận được thư mời phỏng vấn
-- [I] [have] [received] [the] [interview] [invitation]
-- [I] [received] [the] [interview] [invitation]
+11. Chúng ta sẽ cùng tìm hiểu cách thiết kế một logo đại diện cho công ty mà bạn đang xây dựng.
+- [We] [will] [learn] [how] [to] [design] [a] [logo] [that] [represents] [the] [company] [you’re] [building] [.]
+- [We’re] [going] [to] [learn] [how] [to] [make] [a] [logo] [for] [your] [own] [business] [.]
 
-12. Cô ấy sẽ làm việc từ xa hôm nay
-- [She] [will] [work] [remotely] [today]
-- [She] [is] [working] [remotely] [today]
+12. Logo chính là cách khách hàng nhận diện bạn, vì vậy điều đầu tiên bạn cần làm là suy nghĩ về thông điệp mà bạn muốn truyền tải.
+- [A] [logo] [is] [how] [customers] [recognize] [you] [,] [so] [the] [first] [thing] [you] [need] [to] [do] [is] [think] [about] [the] [message] [you] [want] [to] [convey] [.]
+- [Your] [logo] [shows] [who] [you] [are] [,] [so] [first] [think] [about] [what] [you] [want] [people] [to] [feel] [when] [they] [see] [it] [.]
 
-13. Vui lòng liên hệ với bộ phận nhân sự
-- [Please] [contact] [the] [human] [resources] [department]
-- [Please] [contact] [the] [HR] [department]
+13. Xin hãy xem tờ tài liệu ở trước mặt bạn.
+- [Please] [review] [the] [document] [in] [front] [of] [you] [.]
+- [Take] [a] [look] [at] [the] [handout] [in] [front] [of] [you] [.]
 
-14. Tôi đang đợi phản hồi của sếp
-- [I] [am] [waiting] [for] [the] [supervisor's] [feedback]
-- [I] [am] [waiting] [for] [my] [manager's] [feedback]
+14. Chúng ta sẽ cùng thảo luận từng đặc điểm, nhưng trước tiên hãy bắt đầu với cụm từ “Creative advertising at your fingertips”.
+- [We] [will] [discuss] [each] [feature] [together] [,] [but] [first] [let’s] [start] [with] [the] [phrase] [“Creative] [advertising] [at] [your] [fingertips”] [.]
+- [Let’s] [go] [over] [each] [feature] [together] [,] [but] [first] [start] [with] [this] [phrase] [:] [“Creative] [advertising] [at] [your] [fingertips”] [.]
 
-15. Chúng tôi đã phê duyệt đề xuất của bạn
-- [We] [have] [approved] [your] [proposal]
-- [We] [approved] [your] [proposal]
+15. Phần này của logo có chức năng cho khách hàng biết công ty hướng đến điều gì.
+- [This] [part] [of] [the] [logo] [shows] [customers] [what] [the] [company] [stands] [for] [.]
+- [This] [part] [tells] [customers] [what] [your] [business] [is] [about] [.]
 
-16. Cuộc họp đã bị hoãn
-- [The] [meeting] [has] [been] [postponed]
-- [The] [meeting] [was] [postponed]
+16. Bây giờ, hãy thử nghĩ ra những câu khẩu hiệu có thể phù hợp với doanh nghiệp của riêng bạn.
+- [Now] [,] [try] [to] [come] [up] [with] [some] [slogans] [that] [might] [fit] [your] [own] [business] [.]
+- [Let’s] [think] [of] [some] [taglines] [that] [could] [work] [for] [your] [company] [.]
 
-17. Tôi muốn đặt chỗ cho hai người
-- [I] [would] [like] [to] [make] [a] [reservation] [for] [two] [people]
-- [I] [want] [to] [make] [a] [reservation] [for] [two] [people]
+17. Trong tập tài liệu phát kèm, bạn sẽ thấy có giấy và bút để ghi ý tưởng.
+- [In] [the] [handouts] [,] [you] [will] [find] [paper] [and] [pens] [to] [write] [down] [your] [ideas] [.]
+- [You’ll] [find] [paper] [and] [a] [pen] [in] [the] [materials] [to] [note] [your] [ideas] [.]
 
-18. Họ đã chuyển đến trụ sở mới
-- [They] [have] [moved] [to] [the] [new] [headquarters]
-- [They] [moved] [to] [the] [new] [headquarters]
+18. Tôi chỉ muốn cảm ơn bạn đã tham gia cuộc khảo sát thành viên của chúng tôi.
+- [I] [just] [want] [to] [thank] [you] [for] [taking] [part] [in] [our] [membership] [survey] [.]
+- [Thanks] [for] [joining] [our] [member] [survey] [.]
 
-19. Vui lòng kiểm tra tồn kho
-- [Please] [check] [the] [inventory]
-- [Please] [check] [the] [stock]
+19. Những ai đã hoàn thành một cuộc khảo sát sẽ nhận được một phiếu mua hàng trị giá năm đô la.
+- [Anyone] [who] [has] [completed] [a] [survey] [will] [receive] [a] [five-dollar] [voucher] [.]
+- [If] [you’ve] [finished] [the] [survey] [,] [you’ll] [get] [a] [five-dollar] [coupon] [.]
 
-20. Tôi cần in mười bản tài liệu này
-- [I] [need] [to] [print] [ten] [copies] [of] [this] [document]
-- [I] [need] [to] [print] [ten] [copies]
+20. Có thể được sử dụng cho bất kỳ khoản học phí nào hoặc trong quán cà phê của chúng tôi.
+- [It] [can] [be] [used] [for] [any] [tuition] [fees] [or] [in] [our] [café] [.]
+- [You] [can] [use] [it] [toward] [classes] [or] [at] [our] [coffee] [shop] [.]
+
+21. Tôi đã gửi nó đến email của bạn.
+- [I] [have] [sent] [it] [to] [your] [email] [.]
+- [I’ve] [emailed] [it] [to] [you] [.]
+
+22. Ngoài ra, nhìn vào phản hồi của bạn, tôi thấy rằng nhìn chung bạn đã đánh giá rất cao cho phòng tập thể dục của chúng tôi.
+- [Also] [,] [looking] [at] [your] [feedback] [,] [I] [see] [that] [you’ve] [rated] [our] [gym] [very] [highly] [overall] [.]
+- [By] [the] [way] [,] [your] [feedback] [shows] [you’re] [really] [satisfied] [with] [our] [gym] [.]
+
+23. Cảm ơn bạn! Đối với hạng mục mà bạn đã chấm năm sao,
+- [Thank] [you] [!] [For] [the] [item] [you] [rated] [five] [stars] [,]
+- [Thanks] [!] [About] [the] [category] [you] [gave] [five] [stars] [to] [.]
+
+24. Tôi muốn hỏi bạn thêm một vài câu hỏi nữa. Nếu bạn có thời gian, xin vui lòng gọi lại cho tôi theo số….
+- [I] [would] [like] [to] [ask] [you] [a] [few] [more] [questions] [.]
+- [If] [you] [have] [time] [,] [please] [call] [me] [back] [at] [this] [number] [.]
+- [I’d] [like] [to] [talk] [a] [bit] [more] [,] [so] [call] [me] [if] [you’re] [free] [.]
