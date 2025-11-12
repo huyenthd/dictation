@@ -1,3 +1,55 @@
+.vietnamese-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 8px;
+    background: #f8fafd;
+    border-radius: 12px;
+    border: 1.5px solid #e0e7ef;
+    box-shadow: 0 2px 8px rgba(102,126,234,0.04);
+    min-height: 48px;
+    padding: 8px 0;
+}
+
+.vietnamese-text-container .btn-arrow {
+    flex: 0 0 auto;
+    margin: 0 12px;
+}
+
+.vietnamese-text {
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 1.15em;
+    min-width: 0;
+    padding: 0 8px;
+    word-break: break-word;
+}
+
+.arrow-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.arrow-row .btn-arrow {
+    flex: 0 0 auto;
+    margin: 0 8px;
+}
+
+.arrow-row #vietnameseText {
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 1.15em;
+    min-width: 0;
+    padding: 0 8px;
+    word-break: break-word;
+}
 
 .btn-arrow {
     background: #f0f4ff;
@@ -34,7 +86,7 @@
 
 .version-badge {
     position: absolute;
-    bottom: 8px;
+    top: 8px;
     left: 8px;
     background: rgba(102, 126, 234, 0.1);
     color: #667eea;
@@ -43,7 +95,7 @@
     font-size: 0.7em;
     font-weight: 600;
     z-index: 10;
-    opacity: 0.6;
+    opacity: 0.7;
     user-select: none;
 }
 

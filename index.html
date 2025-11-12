@@ -128,7 +128,11 @@
             </div>
 
             <div class="question-section">
-                <div id="vietnameseText" class="vietnamese-text"></div>
+                <div id="vietnameseTextContainer" class="vietnamese-text-container">
+                    <button id="prevArrowBtn" class="btn btn-arrow" aria-label="Previous question">←</button>
+                    <div id="vietnameseText" class="vietnamese-text"></div>
+                    <button id="nextArrowBtn" class="btn btn-arrow" aria-label="Next question">→</button>
+                </div>
             </div>
 
             <div class="answer-section">
@@ -140,11 +144,7 @@
             </div>
 
             <div class="action-buttons">
-                <button id="prevArrowBtn" class="btn btn-arrow" aria-label="Previous question"
-                    style="display:none;">←</button>
                 <button id="skipBtn" class="btn btn-skip">Skip</button>
-                <button id="nextArrowBtn" class="btn btn-arrow" aria-label="Next question"
-                    style="display:none;">→</button>
                 <button id="nextBtn" class="btn btn-next hidden">➜ Next</button>
             </div>
 

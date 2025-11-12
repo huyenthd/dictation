@@ -9,18 +9,8 @@ if (prevArrowBtn && nextArrowBtn) {
     nextArrowBtn.addEventListener('click', () => {
         goToNextQuestion();
     });
-    // Show on mobile only
-    function updateArrowVisibility() {
-        if (window.innerWidth <= 800) {
-            prevArrowBtn.style.display = '';
-            nextArrowBtn.style.display = '';
-        } else {
-            prevArrowBtn.style.display = 'none';
-            nextArrowBtn.style.display = 'none';
-        }
-    }
-    window.addEventListener('resize', updateArrowVisibility);
-    updateArrowVisibility();
+    prevArrowBtn.style.display = '';
+    nextArrowBtn.style.display = '';
 }
 // Global variables
 let lessons = [];
@@ -309,6 +299,27 @@ function startGame() {
 
 // Show question
 function showQuestion() {
+
+    // Show/hide navigation arrows based on currentQuestionIndex
+    if (prevArrowBtn) {
+        if (currentQuestionIndex > 0) {
+            prevArrowBtn.style.visibility = 'visible';
+        } else {
+            prevArrowBtn.style.visibility = 'hidden';
+        }
+    }
+    if (nextArrowBtn) {
+        // Chỉ hiển thị mũi tên phải nếu câu tiếp theo đã được visited
+        if (
+            currentQuestionIndex < lessons.length - 1 &&
+            visitedQuestions.has(currentQuestionIndex + 1)
+        ) {
+            nextArrowBtn.style.visibility = 'visible';
+        } else {
+            nextArrowBtn.style.visibility = 'hidden';
+        }
+    }
+
     if (currentQuestionIndex >= lessons.length) {
         showResults();
         return;
