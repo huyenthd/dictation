@@ -12,6 +12,17 @@ let hasMatchedInSession = false; // Track if a match was found in current sessio
 let visitedQuestions = new Set(); // Track which questions have been visited (completed or in progress)
 let completedQuestions = {}; // Store completed questions state {questionIndex: {userAnswers, isCorrect, feedback}}
 
+// Load and display version number
+fetch('version.txt')
+    .then(response => response.text())
+    .then(version => {
+        const versionBadge = document.querySelector('.version-badge');
+        if (versionBadge) {
+            versionBadge.textContent = 'v' + version.trim();
+        }
+    })
+    .catch(err => console.log('Could not load version:', err));
+
 // DOM elements
 const fileInput = document.getElementById('fileInput');
 const gameArea = document.getElementById('game-area');
@@ -108,22 +119,6 @@ function ensureVoicesOnGesture() {
 
 document.body.addEventListener('touchstart', ensureVoicesOnGesture, { once: true });
 document.body.addEventListener('click', ensureVoicesOnGesture, { once: true });
-
-// Delegate touchend -> click for interactive controls on mobile to avoid missed taps
-document.addEventListener('touchend', function (e) {
-    try {
-        const selector = e.target.closest && e.target.closest('.word-btn, .btn, .file-label, .help-btn, .btn-audio-version, .btn-clear-version, .btn-skip, .btn-next');
-        if (selector) {
-            // Prevent the synthetic mouse event that follows the touch
-            e.preventDefault();
-            // Small log for debugging on mobile
-            // console.log('touchend mapped to click for', selector);
-            selector.click();
-        }
-    } catch (err) {
-        // ignore
-    }
-}, { passive: false });
 
 // Update speech rate when user changes speed
 speedSelect.addEventListener('change', (e) => {
