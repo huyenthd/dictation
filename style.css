@@ -998,6 +998,15 @@ select:focus {
     animation: fadeIn 0.3s;
 }
 
+#pasteLessonsTextarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: vertical;
+    min-height: 120px;
+    max-height: 400px;
+    box-sizing: border-box;
+}
+}
+
 .modal-content {
     background: white;
     border-radius: 15px;

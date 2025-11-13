@@ -14,7 +14,7 @@
         <div class="version-badge"></div>
 
         <header>
-            <h1><span id="graduationCap">🎓</span> Dictation</h1>
+            <h1 id="dictationTitle"><span id="graduationCap">🎓</span> Dictation</h1>
         </header>
 
         <div class="upload-section">
@@ -82,6 +82,23 @@
         <!-- Typing indicator popup -->
         <div id="typingIndicator" class="typing-indicator hidden">
             <span id="typingText"></span>
+        </div>
+
+        <!-- Paste lessons modal -->
+        <div id="pasteLessonsModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Paste Lesson Data</h2>
+                    <button id="closePasteLessons" class="close-btn">×</button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="pasteLessonsTextarea" rows="12"
+                        style="width:100%;font-size:1em;padding:12px;border-radius:8px;border:1px solid #ccc;"></textarea>
+                    <div style="margin-top:18px;text-align:right;">
+                        <button id="loadPastedLessonsBtn" class="btn btn-check">Load</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Keyboard shortcuts help modal -->

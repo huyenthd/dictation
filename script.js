@@ -58,6 +58,47 @@ const helpModal = document.getElementById('helpModal');
 const closeModal = document.getElementById('closeModal');
 const voiceSelect = document.getElementById('voiceSelect');
 const speedSelect = document.getElementById('speedSelect');
+const dictationTitle = document.getElementById('dictationTitle');
+const pasteLessonsModal = document.getElementById('pasteLessonsModal');
+const closePasteLessons = document.getElementById('closePasteLessons');
+const pasteLessonsTextarea = document.getElementById('pasteLessonsTextarea');
+const loadPastedLessonsBtn = document.getElementById('loadPastedLessonsBtn');
+// Feature: Click title 3 times to show paste modal
+let titleClickCount = 0;
+let titleClickTimer = null;
+if (dictationTitle) {
+    dictationTitle.addEventListener('click', (event) => {
+        event.stopPropagation(); // Prevent bubbling to parent elements
+        titleClickCount++;
+        clearTimeout(titleClickTimer);
+        titleClickTimer = setTimeout(() => {
+            titleClickCount = 0;
+        }, 2000);
+        if (titleClickCount === 3) {
+            titleClickCount = 0;
+            pasteLessonsModal.classList.remove('hidden');
+            pasteLessonsTextarea.value = '';
+            pasteLessonsTextarea.focus();
+        }
+    });
+}
+
+if (closePasteLessons) {
+    closePasteLessons.addEventListener('click', () => {
+        pasteLessonsModal.classList.add('hidden');
+    });
+}
+
+if (loadPastedLessonsBtn) {
+    loadPastedLessonsBtn.addEventListener('click', () => {
+        const content = pasteLessonsTextarea.value;
+        if (content && content.trim().length > 0) {
+            parseFileContent(content);
+            pasteLessonsModal.classList.add('hidden');
+            startGame();
+        }
+    });
+}
 
 // Voice settings
 let voices = [];
@@ -160,23 +201,26 @@ const graduationCap = document.getElementById('graduationCap');
 let capClickCount = 0;
 let capClickTimer = null;
 
-graduationCap.addEventListener('click', () => {
-    capClickCount++;
-    console.log('Graduation cap clicked:', capClickCount);
+if (graduationCap) {
+    graduationCap.addEventListener('click', (event) => {
+        event.stopPropagation(); // Prevent bubbling to parent elements
+        capClickCount++;
+        console.log('Graduation cap clicked:', capClickCount);
 
-    // Reset counter after 2 seconds of inactivity
-    clearTimeout(capClickTimer);
-    capClickTimer = setTimeout(() => {
-        capClickCount = 0;
-    }, 2000);
+        // Reset counter after 2 seconds of inactivity
+        clearTimeout(capClickTimer);
+        capClickTimer = setTimeout(() => {
+            capClickCount = 0;
+        }, 2000);
 
-    // Load lessons.txt after 5 clicks
-    if (capClickCount === 5) {
-        capClickCount = 0;
-        console.log('Loading lessons.txt...');
-        loadLessonsFile();
-    }
-});
+        // Load lessons.txt after 3 clicks
+        if (capClickCount === 3) {
+            capClickCount = 0;
+            console.log('Loading lessons.txt...');
+            loadLessonsFile();
+        }
+    });
+}
 
 // Load lessons.txt file
 function loadLessonsFile() {
