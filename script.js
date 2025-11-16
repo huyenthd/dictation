@@ -57,6 +57,8 @@ const helpBtn = document.getElementById('helpBtn');
 const helpModal = document.getElementById('helpModal');
 const closeModal = document.getElementById('closeModal');
 const voiceSelect = document.getElementById('voiceSelect');
+// Track if speech is currently playing
+let isSpeaking = false;
 const speedSelect = document.getElementById('speedSelect');
 const dictationTitle = document.getElementById('dictationTitle');
 const pasteLessonsModal = document.getElementById('pasteLessonsModal');
@@ -80,6 +82,15 @@ if (dictationTitle) {
             pasteLessonsTextarea.value = '';
             pasteLessonsTextarea.focus();
         }
+        utterance.onstart = function () {
+            isSpeaking = true;
+        };
+        utterance.onend = function () {
+            isSpeaking = false;
+        };
+        utterance.onerror = function () {
+            isSpeaking = false;
+        };
     });
 }
 
@@ -493,7 +504,12 @@ function renderAllVersions(lesson) {
         audioBtn.title = 'Listen to correct sentence';
         audioBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            speakSentence(version.words.join(' '));
+            // If speaking, stop only (do not restart)
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+            } else {
+                speakSentence(version.words.join(' '));
+            }
         });
 
         const clearVersionBtn = document.createElement('button');
@@ -598,8 +614,10 @@ function switchToPreviousVersion() {
 
 // Text-to-speech function
 function speakSentence(text) {
-    // Cancel any ongoing speech
-    window.speechSynthesis.cancel();
+    // Only play if not already speaking
+    if (window.speechSynthesis.speaking) {
+        return;
+    }
 
     const utterance = new SpeechSynthesisUtterance(text);
 
@@ -1000,17 +1018,20 @@ document.addEventListener('keydown', (e) => {
         return;
     }
 
-    // Handle Shift - play audio of active version
+    // Handle Shift - play/stop audio of active version
     if (e.key === 'Shift') {
         e.preventDefault();
-
-        // Get the correct sentence for active version
-        const lesson = lessons[currentQuestionIndex];
-        if (lesson) {
-            const [questionIndex, versionIndex] = activeVersionId.split('-').map(Number);
-            const version = lesson.versions[versionIndex];
-            if (version) {
-                speakSentence(version.words.join(' '));
+        if (window.speechSynthesis.speaking) {
+            window.speechSynthesis.cancel();
+        } else {
+            // Get the correct sentence for active version
+            const lesson = lessons[currentQuestionIndex];
+            if (lesson) {
+                const [questionIndex, versionIndex] = activeVersionId.split('-').map(Number);
+                const version = lesson.versions[versionIndex];
+                if (version) {
+                    speakSentence(version.words.join(' '));
+                }
             }
         }
         return;
