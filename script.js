@@ -57,8 +57,6 @@ const helpBtn = document.getElementById('helpBtn');
 const helpModal = document.getElementById('helpModal');
 const closeModal = document.getElementById('closeModal');
 const voiceSelect = document.getElementById('voiceSelect');
-// Track if speech is currently playing
-let isSpeaking = false;
 const speedSelect = document.getElementById('speedSelect');
 const dictationTitle = document.getElementById('dictationTitle');
 const pasteLessonsModal = document.getElementById('pasteLessonsModal');
@@ -82,15 +80,6 @@ if (dictationTitle) {
             pasteLessonsTextarea.value = '';
             pasteLessonsTextarea.focus();
         }
-        utterance.onstart = function () {
-            isSpeaking = true;
-        };
-        utterance.onend = function () {
-            isSpeaking = false;
-        };
-        utterance.onerror = function () {
-            isSpeaking = false;
-        };
     });
 }
 
@@ -504,12 +493,7 @@ function renderAllVersions(lesson) {
         audioBtn.title = 'Listen to correct sentence';
         audioBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            // If speaking, stop only (do not restart)
-            if (window.speechSynthesis.speaking) {
-                window.speechSynthesis.cancel();
-            } else {
-                speakSentence(version.words.join(' '));
-            }
+            speakSentence(version.words.join(' '));
         });
 
         const clearVersionBtn = document.createElement('button');
@@ -614,8 +598,9 @@ function switchToPreviousVersion() {
 
 // Text-to-speech function
 function speakSentence(text) {
-    // Only play if not already speaking
+    // If already speaking, stop and do not play again
     if (window.speechSynthesis.speaking) {
+        window.speechSynthesis.cancel();
         return;
     }
 
@@ -1018,20 +1003,16 @@ document.addEventListener('keydown', (e) => {
         return;
     }
 
-    // Handle Shift - play/stop audio of active version
+    // Handle Shift - play audio of active version
     if (e.key === 'Shift') {
         e.preventDefault();
-        if (window.speechSynthesis.speaking) {
-            window.speechSynthesis.cancel();
-        } else {
-            // Get the correct sentence for active version
-            const lesson = lessons[currentQuestionIndex];
-            if (lesson) {
-                const [questionIndex, versionIndex] = activeVersionId.split('-').map(Number);
-                const version = lesson.versions[versionIndex];
-                if (version) {
-                    speakSentence(version.words.join(' '));
-                }
+        // Get the correct sentence for active version
+        const lesson = lessons[currentQuestionIndex];
+        if (lesson) {
+            const [questionIndex, versionIndex] = activeVersionId.split('-').map(Number);
+            const version = lesson.versions[versionIndex];
+            if (version) {
+                speakSentence(version.words.join(' '));
             }
         }
         return;
@@ -1123,22 +1104,20 @@ document.addEventListener('keydown', (e) => {
         clearTimeout(typingTimer);
     }
 
-    // Only try to match if no match has been found in this session yet
-    if (!hasMatchedInSession) {
-        const matched = tryMatchWord();
-
-        if (matched) {
-            // Match found - mark that we found a match but continue session
-            // Allow user to keep typing in this session
-            hasMatchedInSession = true;
-            // Don't end session here, let user continue typing
-        }
-    }
-
-    // Set new timer - if no typing for 300ms, end typing session
+    // Delay suggestion check by 200ms after last key press
     typingTimer = setTimeout(() => {
-        endTypingSession();
-    }, 300);
+        // Only try to match if no match has been found in this session yet
+        if (!hasMatchedInSession) {
+            const matched = tryMatchWord();
+            if (matched) {
+                hasMatchedInSession = true;
+            }
+        }
+        // End typing session after 300ms of inactivity
+        setTimeout(() => {
+            endTypingSession();
+        }, 100);
+    }, 200);
 });
 
 // Show typing indicator popup
