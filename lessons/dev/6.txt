@@ -1,0 +1,59 @@
+1. Tôi nói thật là nếu backend còn đổi schema kiểu này thì chúng ta không thể deliver kịp được đâu
+ - [Honestly] [if] [backend] [keeps] [changing] [the] [schema] [we] [will] [not] [deliver] [on time]
+
+2. Timeline này quá gấp, tôi không thể đảm bảo chất lượng nếu cứ yêu cầu nhồi thêm tính năng
+ - [This] [timeline] [is] [too] [tight] [I] [cannot] [ensure] [quality] [if] [they] [add] [more] [features]
+
+3. Tôi đã cảnh báo từ trước rồi, nếu không handle edge case này thì chắc chắn sẽ xảy ra lỗi trên SIT
+ - [I] [already] [warned] [that] [if] [this] [edge] [case] [is] [not] [handled] [there] [will] [be] [issues] [in SIT]
+
+4. Chỗ này design quá mơ hồ, chúng ta tranh luận cả buổi mà cũng không rõ được requirement chính xác
+ - [This] [design] [is] [too] [vague] [we] [argued] [for] [hours] [and] [still] [do] [not] [have] [a] [clear] [requirement]
+
+5. Nếu API vẫn trả về dữ liệu inconsistent thế này thì không thể nào test được
+ - [If] [the] [API] [keeps] [returning] [inconsistent] [data] [we] [cannot] [test] [properly]
+
+6. Tôi cực kỳ lo ngại việc deploy code chưa đủ test coverage lên SIT
+ - [I] [am] [very] [concerned] [about] [deploying] [code] [with] [low] [test] [coverage] [in SIT]
+
+7. Tôi không đồng ý với approach này vì nó quá phức tạp và khó maintain về lâu dài
+ - [I] [do] [not] [agree] [with] [this] [approach] [because] [it] [is] [too] [complex] [and] [hard] [to] [maintain]
+
+8. Mọi người ép tôi fix gấp nhưng root cause vẫn nằm ở backend, tôi không thể tự giải quyết được
+ - [Everyone] [is] [pushing] [me] [to] [fix] [quickly] [but] [the] [root] [cause] [is] [in] [backend]
+
+9. Tôi phải nói thẳng: nếu không freeze requirement thì chúng ta sẽ tiếp tục bị trễ
+ - [I] [have] [to] [say] [if] [we] [do] [not] [freeze] [the] [requirement] [we] [will] [fall] [behind]
+
+10. Lỗi này không phải do client, tôi đã chứng minh được backend trả về response sai format
+ - [This] [issue] [is] [not] [from] [client] [I] [confirmed] [backend] [returned] [a] [wrong] [response]
+
+11. Tôi đang bị overload quá mức, nếu không chia lại task thì tôi không kịp đâu
+ - [I] [am] [overloaded] [if] [we] [do] [not] [reassign] [tasks] [I] [will] [not] [finish] [on time]
+
+12. Việc thay đổi design phút chót đang khiến đội dev phải chạy theo sửa từng màn hình một
+ - [These] [last-minute] [changes] [are] [forcing] [the] [team] [to] [fix] [every] [screen] [again]
+
+13. Hệ thống test dữ liệu quá tệ, tôi gặp lỗi khác nhau mỗi lần chạy, rất khó để debug
+ - [The] [test] [data] [system] [is] [bad] [I] [get] [different] [errors] [every] [run] [and] [it] [is] [very] [hard] [to] [debug]
+
+14. Tôi biết là mọi người muốn nhanh, nhưng logic kiểu này là recipe for disaster
+ - [I] [know] [everyone] [wants] [speed] [but] [this] [logic] [is] [a] [recipe] [for] [disaster]
+
+15. Chúng ta đang tốn quá nhiều thời gian fix regression do requirement thay đổi liên tục
+ - [We] [spend] [too] [much] [time] [fixing] [regression] [because] [the] [requirement] [keeps] [changing]
+
+16. Tôi không muốn implement workaround nữa, chúng ta cần giải quyết tận gốc vấn đề
+ - [I] [do] [not] [want] [workarounds] [we] [need] [to] [fix] [the] [root] [problem]
+
+17. Lỗi này không phải minor đâu, để lâu sẽ gây hậu quả lớn trong PROD
+ - [This] [issue] [is] [not] [minor] [if] [ignored] [it] [will] [cause] [big] [problems] [in] [PROD]
+
+18. Tôi cảm giác là chúng ta đang cố nhồi quá nhiều thứ vào cùng một sprint
+ - [I] [feel] [we] [are] [adding] [too] [many] [things] [into] [one] [sprint]
+
+19. Tôi cần thêm thời gian để test đúng bài bản, chứ chạy kiểu này rất dễ miss bug
+ - [I] [need] [more] [time] [to] [test] [properly] [this] [rush] [will] [cause] [missed] [bugs]
+
+20. Nếu không có guideline rõ ràng thì rất khó để cả team implement thống nhất
+ - [If] [there] [is] [no] [clear] [guideline] [the] [team] [cannot] [implement] [consistently]

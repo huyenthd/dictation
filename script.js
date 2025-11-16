@@ -128,6 +128,17 @@ let voices = [];
 let selectedVoice = null;
 let speechRate = 1; // Default speed
 
+// Mute state
+let isMuted = false;
+const muteBtn = document.getElementById('muteBtn');
+if (muteBtn) {
+    muteBtn.addEventListener('click', () => {
+        isMuted = !isMuted;
+        muteBtn.textContent = isMuted ? '🔇' : '🔈';
+        muteBtn.title = isMuted ? 'Unmute audio' : 'Mute audio';
+    });
+}
+
 // Load available voices
 function loadVoices() {
     voices = window.speechSynthesis.getVoices();
@@ -621,6 +632,13 @@ function switchToPreviousVersion() {
 
 // Text-to-speech function
 function speakSentence(text) {
+    // Block all audio if muted
+    if (isMuted) {
+        if (window.speechSynthesis.speaking) {
+            window.speechSynthesis.cancel();
+        }
+        return;
+    }
     // If already speaking, stop and do not play again
     if (window.speechSynthesis.speaking) {
         window.speechSynthesis.cancel();

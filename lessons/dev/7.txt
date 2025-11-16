@@ -1,0 +1,149 @@
+1. Chỗ này tôi nghĩ cần refactor mạnh tay, để vậy maintenance sau này rất cực
+ - [I] [think] [this] [needs] [a] [heavy] [refactor] [it] [will] [be] [hard] [to] [maintain] [later]
+
+2. Sáng nay tôi làm rơi cà phê lên bàn phím, giờ phím Space hơi đơ
+ - [This morning] [I] [spilled] [coffee] [on] [my] [keyboard] [and] [now] [the] [space] [key] [is] [slow]
+
+3. Ngày hôm nay mọi thứ đều chạy sai, tôi nghi là server đang có vấn đề
+ - [Today] [everything] [is] [breaking] [I] [think] [the] [server] [has] [a] [problem]
+
+4. Bạn check giúp tôi flag này có đang ảnh hưởng đến user không
+ - [Please] [check] [if] [this] [flag] [is] [affecting] [users]
+
+5. Tối qua tôi coi phim khuya nên giờ hơi đừ, nếu câu trả lời chậm thì thông cảm
+ - [I] [stayed] [up] [late] [last night] [watching] [movies] [so] [I] [may] [reply] [slow]
+
+6. Tôi không nghĩ approach này hợp lý, rủi ro cao và khó debug
+ - [I] [do] [not] [think] [this] [approach] [is] [good] [it] [has] [high] [risk] [and] [is] [hard] [to] [debug]
+
+7. Nhìn log mà muốn xỉu, sao lại có 200 request trong 1 giây
+ - [These] [logs] [are] [crazy] [why] [are] [there] [200] [requests] [per] [second]
+
+8. Tôi chỉ muốn nói là hôm nay tôi vui, cảm giác có năng lượng làm việc hơn
+ - [I] [just] [want] [to] [say] [I] [am] [happy] [today] [I] [feel] [more] [motivated]
+
+9. Bạn cho tôi 5 phút để reboot não cái đã, hơi overload thiệt
+ - [Give] [me] [five minutes] [to] [reset] [my] [brain] [I] [am] [overloaded]
+
+10. Chỗ này bạn viết tốt rồi, chỉ cần rename cho dễ hiểu hơn là xong
+ - [This] [is] [good] [you] [just] [need] [to] [rename] [it] [to] [make] [it] [clear]
+
+11. Tôi đang nghi đây là race condition vì nó xảy ra rất ngẫu nhiên
+ - [I] [suspect] [a] [race] [condition] [because] [it] [happens] [randomly]
+
+12. Hôm nay team mình nên đi ăn trưa chung cho vui không
+ - [Should] [our team] [have lunch] [together] [today]
+
+13. Nhìn deadline mà tôi chỉ muốn trốn vào toilet luôn
+ - [When] [I] [see] [the] [deadline] [I] [want] [to] [hide] [in] [the] [toilet]
+
+14. Tôi nghĩ mình đang làm đúng mà, sao test cứ fail hoài không hiểu
+ - [I] [think] [I] [am] [doing] [it] [right] [but] [the] [test] [keeps] [failing]
+
+15. Nếu backend không fix phần đó thì FE patch kiểu gì cũng không ổn
+ - [If] [backend] [does] [not] [fix] [that] [part] [FE] [cannot] [patch] [it] [properly]
+
+16. Bạn nào rảnh giải thích giúp tôi tại sao build CI fail vậy
+ - [Who] [is] [free] [to] [explain] [why] [the] [CI] [build] [failed]
+
+17. Hôm nay mood tôi hơi xuống, nếu nói chuyện ít thì mọi người đừng nghĩ gì nha
+ - [My mood] [is] [low] [today] [so] [if] [I] [talk] [less] [please] [do] [not] [mind]
+
+18. Cái bug này làm tôi mất nửa ngày rồi mà chưa tìm được hướng fix
+ - [This bug] [took] [me] [half] [a] [day] [and] [I] [still] [cannot] [find] [a] [fix]
+
+19. Tôi dispute tí: cách này nhanh nhưng cực kỳ khó maintain
+ - [I] [want] [to] [disagree] [this] [way] [is] [fast] [but] [very] [hard] [to] [maintain]
+
+20. Jump vào call nhanh không, tôi explain cho dễ hơn
+ - [Join] [a] [quick] [call] [I] [will] [explain] [it] [better]
+
+21. Tối qua con mèo tôi phá banh phòng nên tôi ngủ không được, giờ hơi đuối
+ - [My cat] [destroyed] [my room] [last night] [so] [I] [did] [not] [sleep] [well]
+
+22. Repo này càng ngày càng nặng, clone máy mới chắc xỉu
+ - [This repo] [is] [getting] [too] [big] [cloning] [it] [on] [a new machine] [would] [kill] [me]
+
+23. Tôi biết là mọi người muốn merge nhanh, nhưng quality quan trọng hơn chứ
+ - [I know] [everyone] [wants] [to merge] [quickly] [but] [quality] [is] [more] [important]
+
+24. Sao mỗi lần deploy lên SIT là tôi lại thấy lỗi mới vậy trời
+ - [Why] [do] [I] [see] [new] [issues] [every] [time] [we] [deploy] [to SIT]
+
+25. Tôi mệt rồi, chắc cần một ly trà sữa thúc tinh thần
+ - [I] [am] [tired] [I] [need] [a] [milk tea] [to] [boost] [my] [energy]
+
+26. Bạn ơi, coi lại giúp tôi đoạn này vì behaviour hơi kỳ
+ - [Please] [check] [this part] [because] [the] [behavior] [is] [weird]
+
+27. Tôi không chắc design này hợp lý, nhìn khá thiếu nhất quán
+ - [I am] [not sure] [this design] [is] [good] [it] [looks] [inconsistent]
+
+28. Tôi thấy flow này hơi vòng vèo, có cách nào simplify không
+ - [This flow] [is] [too] [complex] [can] [we] [simplify] [it]
+
+29. Nãy giờ tôi debug mà như chơi trò đoán số luôn
+ - [Debugging] [this] [feels] [like] [guessing] [numbers]
+
+30. Tôi hơi stress vì có quá nhiều việc dồn lại một lúc
+ - [I am] [a bit] [stressed] [because] [there are] [too many] [tasks] [at once]
+
+31. Lúc review PR bạn đừng ngại comment mạnh tay, tôi quen rồi
+ - [When] [you] [review] [my PR] [do] [not] [hesitate] [to] [comment] [I] [am] [used] [to it]
+
+32. Tôi vui ghê khi thấy test pass lại rồi
+ - [I am] [really] [happy] [that] [the] [tests] [passed] [again]
+
+33. Bạn nào đổi config mà quên báo vậy? Tôi build hoài không được
+ - [Who] [changed] [the config] [without] [telling] [us] [I] [could] [not] [build]
+
+34. Được rồi, tôi chịu thua bug này, cho tôi 10 phút đi dạo để bình tĩnh
+ - [Okay] [I] [give up] [on] [this bug] [give] [me] [ten minutes] [to] [walk] [and] [calm down]
+
+35. Tối nay mọi người rảnh không, đi ăn xả stress chút
+ - [Is] [anyone] [free] [tonight] [let’s] [eat out] [to] [relax]
+
+36. PR này nhiều thay đổi quá, tôi đọc xong thấy chóng mặt
+ - [This PR] [has] [too many] [changes] [I] [felt] [dizzy] [reading] [it]
+
+37. Con số này nhìn hơi đáng ngờ, bạn confirm lại giúp tôi nha
+ - [This number] [looks] [strange] [please] [confirm] [it]
+
+38. Tôi hơi bực vì API lại đổi mà không báo ai hết
+ - [I am] [upset] [because] [the API] [changed] [again] [without] [telling] [anyone]
+
+39. Ngày dài quá trời, chắc tối nay tôi ngủ sớm quá
+ - [Today] [is] [too] [long] [I] [will] [sleep] [early]
+
+40. Bạn có muốn tôi review lại logic đó lần cuối cho chắc không
+ - [Do] [you] [want] [me] [to review] [that logic] [one more time]
+
+41. Tôi đoán rằng behaviour kỳ lạ này do caching cũ chưa được clear
+ - [I guess] [this weird] [behavior] [comes] [from] [old] [cache]
+
+42. Nếu chạy lại mà vẫn fail thì tôi nghĩ chúng ta phải xem lại spec
+ - [If] [it] [fails] [again] [we] [should] [check] [the] [spec]
+
+43. Tôi cảm giác tuần này dài bằng nguyên một tháng
+ - [I feel] [this week] [is] [as long as] [a] [month]
+
+44. Đừng push thêm tính năng lúc này nữa, tôi chưa fix xong đống lỗi cũ
+ - [Please] [do] [not] [add] [more features] [I] [have] [not] [fixed] [the old] [issues]
+
+45. Bạn làm tôi cười xỉu với cái comment đó luôn
+ - [You] [made] [me] [laugh] [with] [that comment]
+
+46. Tôi cần thêm data từ BA trước khi viết tiếp phần này
+ - [I need] [more data] [from] [BA] [before] [I continue]
+
+47. Tự nhiên mạng tôi chậm quá, chắc do mưa lớn
+ - [My internet] [is] [slow] [maybe] [because] [of] [the rain]
+
+48. Tôi không hiểu tại sao function này lại được gọi hai lần
+ - [I] [do] [not] [understand] [why] [this function] [is called] [twice]
+
+49. Tôi hơi lo vì có vẻ như chúng ta đang lệ thuộc quá nhiều vào workaround
+ - [I am] [worried] [we] [are] [depending] [too much] [on] [workarounds]
+
+50. Hôm nay thật sự mệt nhưng làm chung với mọi người cũng đỡ stress hơn nhiều
+ - [Today] [is] [really] [tiring] [but] [working] [with everyone] [helps] [me] [feel better]
