@@ -13,9 +13,9 @@
     padding: 8px 0;
 }
 
+/* Remove arrow buttons from inside vietnamese-text-container */
 .vietnamese-text-container .btn-arrow {
-    flex: 0 0 auto;
-    margin: 0 12px;
+    display: none !important;
 }
 
 .vietnamese-text {
@@ -32,23 +32,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 0;
-    margin-bottom: 8px;
+    gap: 16px;
+    margin-bottom: 12px;
     width: 100%;
 }
 
 .arrow-row .btn-arrow {
     flex: 0 0 auto;
     margin: 0 8px;
-}
-
-.arrow-row #vietnameseText {
-    flex: 1 1 auto;
-    text-align: center;
-    font-size: 1.15em;
-    min-width: 0;
-    padding: 0 8px;
-    word-break: break-word;
 }
 
 .btn-arrow {
