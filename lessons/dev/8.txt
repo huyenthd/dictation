@@ -1,0 +1,149 @@
+1. Tôi nghĩ logic này nhìn thì đơn giản nhưng ẩn bên trong có nhiều rủi ro khó lường
+ - [I] [think] [this logic] [looks] [simple] [but] [has] [many] [hidden] [risks]
+
+2. Sáng nay tôi bị kẹt xe gần 1 tiếng nên vào trễ, mọi người thông cảm nha
+ - [I] [was] [stuck] [in traffic] [for] [almost] [an hour] [so] [I came late]
+
+3. Chỗ này bạn viết ok rồi, chỉ thiếu chút defensive check
+ - [This part] [is good] [you] [just] [need] [a] [defensive] [check]
+
+4. Tôi đang đói quá, chắc lát nghỉ giữa giờ tôi đi kiếm gì ăn
+ - [I] [am] [so hungry] [I will] [find] [something] [to eat] [later]
+
+5. Hôm nay tôi hơi không tập trung, code hơi chậm, mọi người chịu khó nhé
+ - [Today] [I] [am] [not] [very focused] [so] [I code] [a bit] [slow]
+
+6. Nhìn error này mà tôi muốn bỏ nghề luôn đó
+ - [Looking] [at this error] [makes] [me] [want] [to quit] [my job]
+
+7. Bạn thử reproduce bug này giúp tôi vì máy tôi không ra
+ - [Please] [try] [to reproduce] [this bug] [my machine] [does] [not] [show] [it]
+
+8. Nếu mọi người không thích solution này thì tôi sẵn sàng đổi hướng
+ - [If] [the team] [does] [not] [like] [this solution] [I] [am] [open] [to change]
+
+9. Hôm nay tâm trạng tôi khá tốt, mọi thứ thấy nhẹ nhàng hơn
+ - [My mood] [is good] [today] [everything] [feels] [lighter]
+
+10. Tôi nghi là design mới chưa được sync đầy đủ cho cả team
+ - [I] [suspect] [the new design] [was] [not fully synced] [with the team]
+
+11. Thử nghiệm xong thấy chạy nhanh hơn hẳn, đúng là đáng công
+ - [After testing] [I] [see] [it runs] [much faster] [it] [was] [worth] [the effort]
+
+12. Tối qua tôi ngủ có 3 tiếng nên đầu óc hơi lag
+ - [I] [slept] [only] [three hours] [last night] [so] [I] [am] [lagging]
+
+13. Sao bạn biết được tôi đang gặp đúng cái lỗi đó hay vậy
+ - [How] [did] [you] [know] [I] [had] [that] [exact] [same] [issue]
+
+14. Tôi nghĩ bạn nên tách phần này ra để test dễ hơn
+ - [I] [think] [you should] [split] [this part] [to make] [testing] [easier]
+
+15. Nhìn branch này dài ghê, merge vô chắc toang conflict
+ - [This branch] [is] [so long] [the merge] [will] [likely] [conflict]
+
+16. Tôi hơi stress vì phải làm song song hai task critical
+ - [I] [am] [stressed] [because] [I have] [two critical tasks] [at once]
+
+17. Chỗ này behaviour thay đổi theo thời gian, nên test automation dễ fail
+ - [This behavior] [changes] [over time] [so] [automation tests] [fail] [often]
+
+18. Hôm nay trời đẹp quá, lát tôi muốn đi dạo chút cho thoải mái
+ - [Today] [the weather] [is nice] [I want] [to take] [a walk] [later]
+
+19. Tôi không hiểu sao cái hàm này chạy nhanh hơn bản trước nhiều
+ - [I] [do] [not understand] [why] [this function] [runs] [much faster] [than before]
+
+20. Bạn rảnh thì review giúp tôi sớm để tôi còn move on task khác
+ - [If] [you are free] [please] [review] [this soon] [so] [I can] [move on]
+
+21. Tính năng này nhìn nhỏ nhưng đụng vào thấy khá phức tạp
+ - [This feature] [looks small] [but] [is] [quite complex]
+
+22. Tôi vui vì build đã xanh lại sau mấy tiếng vật lộn
+ - [I am] [happy] [the build] [is green] [again] [after] [hours] [of work]
+
+23. Hôm nay team mình hơi im ắng, chắc ai cũng mệt
+ - [The team] [is quiet] [today] [maybe] [everyone] [is tired]
+
+24. Bạn nào đổi API mà không nói đi, làm tôi debug muốn xỉu
+ - [Who] [changed] [the API] [without] [telling us] [it made] [me] [debug] [like crazy]
+
+25. Tôi hơi lo vì performance có thể không đạt yêu cầu
+ - [I am] [worried] [the performance] [may] [not meet] [the requirement]
+
+26. Cái lỗi này nhìn đơn giản nhưng thật ra rất khó sửa
+ - [This bug] [looks simple] [but] [is] [very hard] [to fix]
+
+27. Mọi người đi ăn trưa chưa, tôi đói muốn xỉu
+ - [Has anyone] [had lunch] [yet] [I am] [starving]
+
+28. Tôi nghĩ chúng ta nên stop nhét thêm scope mới vào sprint này
+ - [I think] [we should] [stop] [adding] [more scope] [to this sprint]
+
+29. Chỗ này tuần trước chạy ổn mà sao hôm nay kỳ vậy
+ - [This part] [worked] [last week] [why] [is it] [weird] [today]
+
+30. Tôi hơi buồn vì cuối tuần trời mưa nên không đi chơi được
+ - [I am] [a bit sad] [because] [it rained] [and] [I] [could not] [go out]
+
+31. Bạn review rất kỹ, đọc comment bạn tôi cười xỉu
+ - [You] [review] [so carefully] [your comments] [made] [me] [laugh]
+
+32. Tôi nghĩ nên thêm log tạm để dò vấn đề này rõ hơn
+ - [I think] [we should] [add] [temporary logs] [to see] [the problem] [better]
+
+33. Nhìn PR mà tôi chóng cả mặt, quá nhiều file thay đổi
+ - [This PR] [is overwhelming] [there are] [too many] [files] [changed]
+
+34. Tôi xin nghỉ 5 phút uống nước, mệt quá không nhìn nổi màn hình
+ - [I need] [five minutes] [to drink water] [I am] [too tired] [to look] [at the screen]
+
+35. Tôi thích solution của bạn, nhìn gọn và hợp lý
+ - [I like] [your solution] [it looks] [clean] [and] [reasonable]
+
+36. Sáng nay tôi bị đau đầu nên làm hơi chậm, mọi người thông cảm
+ - [I have] [a headache] [today] [so] [I work] [a bit slow]
+
+37. Tôi nghĩ phần này đang duplicate logic từ module khác
+ - [I think] [this part] [duplicates] [logic] [from] [another module]
+
+38. Hôm qua tôi tập gym quá sức, giờ tay run run code không nổi
+ - [I] [worked out] [too hard] [yesterday] [now] [my hands] [are shaking]
+
+39. Bạn ơi, ở máy tôi nó không crash, bạn gửi thêm video được không
+ - [It does] [not crash] [on my machine] [please] [send] [a video]
+
+40. Tôi cảm giác sprint này trôi nhanh khủng khiếp
+ - [I feel] [this sprint] [is passing] [so fast]
+
+41. Tôi thích cách bạn giải thích, nghe dễ hiểu
+ - [I like] [your explanation] [it is] [easy] [to understand]
+
+42. Tôi debug tới mức thuộc luôn cả log
+ - [I debugged] [so much] [I] [memorized] [the logs]
+
+43. Lúc họp nghe bạn nói câu đó tôi muốn bật cười
+ - [During the meeting] [what you said] [almost] [made] [me] [laugh]
+
+44. Task này nhìn nhỏ mà làm lâu thấy ghê
+ - [This task] [looks small] [but] [takes] [a long time]
+
+45. Tôi cần clarification thêm chút nữa trước khi viết tiếp
+ - [I need] [more clarification] [before] [I continue]
+
+46. Chỗ này đúng ra dễ mà làm tôi xoắn não luôn
+ - [This part] [should be] [easy] [but] [it made] [me] [confused]
+
+47. Bạn gửi nhầm link rồi, tôi mở không lên
+ - [You sent] [the wrong link] [I cannot] [open it]
+
+48. Tôi nghĩ team mình cần nghỉ xả stress một buổi
+ - [I think] [our team] [needs] [a break] [to relax]
+
+49. Nếu tối nay không fix xong bug này chắc tôi mất ngủ luôn
+ - [If] [I] [do not] [fix] [this bug] [tonight] [I will] [not sleep]
+
+50. Cảm ơn mọi người hôm nay đã giúp đỡ, tôi thấy nhẹ hẳn
+ - [Thank you] [everyone] [for helping] [today] [I feel] [much better]

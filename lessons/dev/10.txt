@@ -1,0 +1,149 @@
+1. Tôi nghĩ phần này hơi over-engineered, có thể simplify xuống để dễ maintain hơn
+ - [I think] [this part] [is over-engineered] [we should] [simplify it] [to make] [maintenance easier]
+
+2. Không hiểu sao phần này thỉnh thoảng mới crash, rất khó bắt lỗi
+ - [This part] [crashes] [sometimes only] [which makes] [it very hard] [to debug]
+
+3. Tôi đang hơi mệt trong người, nếu reply chậm mọi người thông cảm
+ - [I am] [feeling tired] [today] [so] [my replies] [may be slow]
+
+4. Bạn nào biết sao test chạy local ok mà lên CI lại fail không?
+ - [Does anyone] [know why] [tests pass] [locally] [but fail] [on CI]
+
+5. Chỗ này nhiều biến quá, đọc rất khó hiểu
+ - [There are] [too many variables] [here] [it is] [hard to understand]
+
+6. Tôi nghi backend chưa update đúng nên data hơi kỳ
+ - [I suspect] [backend] [did not update] [correctly] [so the data] [looks wrong]
+
+7. Hôm nay tôi hơi nản vì làm cả buổi nhưng chẳng ra được gì
+ - [I feel] [a bit discouraged] [today] [I worked] [for hours] [but got] [no result]
+
+8. Tôi nghĩ cần thêm retry logic để tránh lỗi random
+ - [We need] [a retry logic] [to avoid] [random failures]
+
+9. Mọi người cho tôi thêm chút thời gian để verify performance
+ - [Give me] [more time] [to verify] [the performance]
+
+10. Nhìn spec vậy chứ implement không hề đơn giản
+ - [The spec] [looks simple] [but implementing] [it is] [not easy]
+
+11. Tôi thấy approach của bạn khá hợp lý, chỉ cần refine một chút
+ - [Your approach] [is reasonable] [we just] [need to] [refine it] [a bit]
+
+12. Hôm qua tôi thức khuya quá nên giờ hơi đừ
+ - [I stayed up] [too late] [last night] [so] [I am] [exhausted]
+
+13. Bạn check lại giúp tôi vì behaviour thay đổi sau khi merge
+ - [Please check] [again] [the behavior] [changed] [after the merge]
+
+14. Tôi nghĩ team mình đang dồn hơi nhiều task vào bạn rồi
+ - [I think] [our team] [is putting] [too many tasks] [on you]
+
+15. Tôi vừa chạy test lại và lần này kết quả khác hoàn toàn
+ - [I ran the tests] [again] [and the result] [is completely different]
+
+16. Chỗ này bạn nên handle thêm vài trường hợp nữa cho chắc
+ - [You should] [handle] [a few more] [cases] [here]
+
+17. Tôi cảm giác như hôm nay mọi thứ đều chống lại tôi
+ - [I feel like] [everything] [is against me] [today]
+
+18. Backend gửi thiếu field nên FE phải đoán logic hơi mệt
+ - [Backend] [sent] [missing fields] [so] [FE] [has to guess] [the logic]
+
+19. Tôi nghĩ cần thêm buổi sync để chốt lại hướng làm
+ - [We need] [another sync] [to finalize] [the direction]
+
+20. Lỗi này hơi bất thường, tôi không hiểu sao nó chỉ xảy ra buổi sáng
+ - [This error] [is unusual] [it happens] [only in the morning]
+
+21. Tôi thấy hơi stress vì phải deliver nhiều thứ cùng lúc
+ - [I am] [a bit stressed] [because] [I must deliver] [many things] [at once]
+
+22. Bạn check lại giúp tôi vì request này không authorized
+ - [Please check] [this request] [it is] [not authorized]
+
+23. Tôi đang debug nhưng log không đủ chi tiết để hiểu vấn đề
+ - [I am debugging] [but the logs] [are not detailed enough]
+
+24. Tôi nghĩ team mình đang underestimate độ khó của phần này
+ - [I think] [our team] [is underestimating] [the difficulty] [of this part]
+
+25. Hôm nay tôi hơi mất tập trung, có thể do thiếu cà phê
+ - [I am] [not very focused] [today] [maybe] [I need] [more coffee]
+
+26. Behaviour này không consistent trong DEV và SIT, rất đáng lo
+ - [This behavior] [is not consistent] [between DEV] [and SIT]
+
+27. Tôi muốn đề xuất thêm unit test cho mấy nhánh còn thiếu
+ - [I want] [to add] [more unit tests] [for missing branches]
+
+28. Cách này chạy được nhưng hơi hacky, tôi muốn làm sạch hơn
+ - [This way] [works] [but] [it feels] [hacky] [I want] [a cleaner solution]
+
+29. Hôm nay tâm trạng tôi hơi khó ở, nếu có nói gì không phải mong mọi người bỏ qua
+ - [My mood] [is not good] [today] [please forgive] [if I] [sound off]
+
+30. Tôi đang nghi concurrency issue trong đoạn này
+ - [I suspect] [a concurrency issue] [in this part]
+
+31. Nếu mọi người rảnh thì join call để bàn nhanh cho rõ
+ - [If you are free] [please join] [a quick call] [to clarify]
+
+32. Tôi thấy code đọc hơi rối, mình format lại có khi đẹp hơn
+ - [This code] [looks messy] [we should] [format it] [for clarity]
+
+33. Nãy giờ tôi đọc spec mà thấy càng đọc càng sai sai
+ - [The more] [I read the spec] [the more] [it feels wrong]
+
+34. Hôm nay team mình hơi im, chắc ai cũng trong mode tập trung
+ - [The team] [is quiet] [today] [maybe] [everyone] [is focusing]
+
+35. Nếu backend confirm đúng thì tôi sẽ implement luôn
+ - [If backend] [confirms] [I will implement] [immediately]
+
+36. Tôi đang nghi dev config chưa được update đúng trên máy bạn
+ - [I suspect] [the dev config] [is not updated] [on your machine]
+
+37. Chỗ này hơi khó hiểu, tôi đọc comment mà vẫn confuse
+ - [This part] [is confusing] [even after] [reading the comment]
+
+38. Flow này hơi tricky vì phụ thuộc nhiều thứ ngầm
+ - [This flow] [is tricky] [because it depends] [on hidden factors]
+
+39. Tôi nghĩ cần viết thêm note trong code để người khác hiểu nhanh hơn
+ - [We should] [add notes] [in the code] [to help] [others understand]
+
+40. Nếu coi lại design thì tôi nghĩ có thể simplify khá nhiều
+ - [If we] [review the design] [we can] [simplify a lot]
+
+41. Ngày dài quá, tôi chỉ muốn về nằm một chút
+ - [This day] [is too long] [I just] [want to rest]
+
+42. Tôi nghi vấn đoạn này tạo ra side-effect không mong muốn
+ - [I suspect] [this part] [creates] [an unwanted side-effect]
+
+43. Mọi người giúp tôi verify lại logic vì tôi sợ missed case
+ - [Please help] [verify the logic] [I am] [afraid] [I missed] [some case]
+
+44. Tôi hơi lo vì task này chưa có estimate rõ ràng
+ - [I am] [worried] [this task] [has no clear estimate]
+
+45. Cái bug này nhìn vô là biết không dễ fix rồi
+ - [This bug] [is clearly] [not easy] [to fix]
+
+46. Tôi cần clarify từ BA trước khi viết tiếp
+ - [I need] [clarification] [from BA] [before I continue]
+
+47. Hôm nay tôi thấy vui, chắc do trời mát
+ - [I feel] [good today] [maybe] [because the weather] [is nice]
+
+48. Code chạy được nhưng nhìn không ổn lắm, nên chỉnh lại
+ - [The code works] [but it] [does not look] [very good] [we should fix it]
+
+49. Tôi nghĩ chỗ này đang swallow error nên khó track
+ - [I think] [this part] [is swallowing] [the error] [so it is] [hard to track]
+
+50. Cảm ơn mọi người, hôm nay tuy mệt mà làm việc chung thấy vui
+ - [Thank you] [everyone] [even though] [I am tired] [I enjoyed] [working together]

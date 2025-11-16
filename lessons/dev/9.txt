@@ -1,0 +1,149 @@
+1. Tôi nghĩ chúng ta nên bàn lại scope vì hiện tại nó đang bị phình ra quá mức
+ - [I think] [we should] [discuss the scope again] [because] [it is getting] [too large]
+
+2. Tôi không chắc logic đó còn đúng nữa sau khi backend thay đổi hôm qua
+ - [I am] [not sure] [that logic] [is still correct] [after] [backend changed] [it yesterday]
+
+3. Tôi muốn confirm lại requirement trước khi implement thêm bất kỳ phần nào
+ - [I want] [to confirm] [the requirement] [before] [I implement] [anything else]
+
+4. Kết quả test của bạn khác tôi khá nhiều, có thể là môi trường chúng ta đang lệch
+ - [Your test result] [is very different] [from mine] [maybe] [our environments] [are not the same]
+
+5. Tôi cố tình để log thêm để track nhưng nó lại không xuất hiện trên SIT
+ - [I added logs] [on purpose] [to track] [but] [they do not show] [on SIT]
+
+6. Dù tôi không phản đối approach này, tôi nghĩ vẫn có cách tối ưu hơn
+ - [I do not] [disagree with this approach] [but] [I think] [there is] [a better way]
+
+7. Tôi chưa rõ bạn muốn handle scenario nào cho flow đó
+ - [I am] [not clear] [which scenario] [you want] [to handle] [for that flow]
+
+8. Tôi thấy chúng ta đang fix symptom chứ chưa chạm được root cause
+ - [I think] [we are fixing] [the symptom] [not] [the root cause]
+
+9. Mọi người đang muốn gấp nhưng tôi sợ nếu làm nhanh sẽ tạo ra regression
+ - [Everyone] [wants this fast] [but] [I am worried] [a quick fix] [will create] [regression]
+
+10. Tối qua tôi review PR mà mắt díp lại, chắc do làm việc hơi quá sức
+ - [I reviewed] [the PR last night] [but] [I was] [too sleepy] [maybe] [I am] [overworking]
+
+11. Nếu mọi người đồng ý thì tôi sẽ refactor mạnh tay phần này
+ - [If] [the team agrees] [I will] [refactor] [this part] [heavily]
+
+12. Chỗ này tôi đọc hoài vẫn thấy confusing, bạn giải thích thêm được không
+ - [This part] [is confusing] [no matter how] [I read it] [can you] [explain more]
+
+13. Tôi cảm giác code mình đang đi theo hướng workaround nhiều quá
+ - [I feel] [our code] [is drifting] [into] [too many] [workarounds]
+
+14. Tôi thấy có một số logic duplicate khá rõ ràng ở đây
+ - [I see] [some very clear] [duplicate logic] [here]
+
+15. Nếu performance là ưu tiên thì cách này sẽ tốt hơn nhiều
+ - [If] [performance] [is the priority] [this way] [will be] [much better]
+
+16. Tôi cố chạy lại local mà vẫn không reproduce được lỗi đó
+ - [I tried] [running locally] [but] [I still cannot] [reproduce] [that error]
+
+17. Team mình thiếu thông tin từ BA nên mọi thứ đang hơi bị đình trệ
+ - [The team] [is lacking] [information from BA] [so] [things are] [slowing down]
+
+18. Hôm nay tâm trạng tôi không ổn lắm, mong mọi người thông cảm
+ - [My mood] [is not good] [today] [I hope] [you all] [understand]
+
+19. Tôi nghĩ chúng ta nên limit scope lại để giữ chất lượng
+ - [I think] [we should] [limit the scope] [to maintain] [quality]
+
+20. Tôi nghi vấn behavior sai đến từ việc caching chưa được clear
+ - [I suspect] [the wrong behavior] [comes from] [uncleared cache]
+
+21. Tôi thích solution đó vì nó nhẹ và dễ đọc hơn hẳn
+ - [I like] [that solution] [because] [it is] [lighter] [and] [easier] [to read]
+
+22. Sáng nay tôi uống cà phê hơi mạnh nên giờ hơi run tay
+ - [I drank] [strong coffee] [this morning] [and now] [my hands] [are shaking]
+
+23. Đây là lần thứ ba tôi gặp lỗi này, rõ ràng có gì đó không ổn
+ - [This is] [the third time] [I see] [this issue] [something] [is definitely wrong]
+
+24. Tôi nghĩ chúng ta cần thêm unit test để đảm bảo stability
+ - [I think] [we need] [more unit tests] [to ensure] [stability]
+
+25. Tôi hiểu ý bạn nhưng tôi vẫn nghĩ solution đó hơi risky
+ - [I get] [your point] [but] [I still think] [that solution] [is risky]
+
+26. Mọi người xem lại giùm tôi vì behaviour này không consistent
+ - [Please] [check again] [this behavior] [is not] [consistent]
+
+27. Tôi nghĩ cần thêm một buổi sync ngắn để làm rõ mọi vấn đề
+ - [I think] [we need] [a short sync] [to clarify] [everything]
+
+28. Task này để qua tuần được không? Tôi đang hơi quá tải
+ - [Can] [we move] [this task] [to next week] [I am] [overloaded]
+
+29. Tôi đang nghi remote config chưa được update đúng
+ - [I suspect] [the remote config] [is not updated] [correctly]
+
+30. Hôm nay tôi hơi stress, chắc do thiếu ngủ
+ - [I am] [a bit stressed] [today] [probably] [because] [I did] [not sleep] [well]
+
+31. Tôi nghĩ chúng ta cần cleanup một số file cũ không còn dùng nữa
+ - [I think] [we should] [clean up] [old files] [that we] [do not use]
+
+32. Cách này chạy được nhưng nhìn hơi khó maintain
+ - [This way] [works] [but] [is] [hard] [to maintain]
+
+33. Bạn test lại giúp tôi vì tôi thấy số liệu không khớp
+ - [Please] [test again] [the numbers] [do not match]
+
+34. Tôi cảm giác sprint này hơi nặng so với những sprint trước
+ - [I feel] [this sprint] [is heavier] [than before]
+
+35. Tôi không biết có phải do network không nhưng API rất chậm
+ - [I am] [not sure] [if it is] [the network] [but] [the API] [is very slow]
+
+36. Tôi đang hơi xìu, chắc vì trời mưa làm buồn ngủ
+ - [I am] [a bit down] [maybe] [the rain] [makes] [me sleepy]
+
+37. Tôi muốn đề xuất review lại architecture nhẹ nhàng một lần
+ - [I want] [to suggest] [a light architecture review]
+
+38. Nếu mọi người thấy ổn thì tôi sẽ cleanup theo hướng đó
+ - [If] [everyone agrees] [I will] [clean up] [in that direction]
+
+39. Tôi nghĩ code readability quan trọng hơn việc cố làm cho nó thật ngắn
+ - [I think] [readability] [is more important] [than making] [the code] [too short]
+
+40. Task này nhìn đơn giản nhưng phải validate khá nhiều
+ - [This task] [looks simple] [but] [needs] [a lot of validation]
+
+41. Mọi người cho tôi thêm chút thời gian để verify hết edge cases
+ - [Give] [me] [more time] [to verify] [all edge cases]
+
+42. Tôi đang hơi lo vì không chắc giải pháp này scale được
+ - [I am] [worried] [because] [I am] [not sure] [this solution] [can scale]
+
+43. Tôi nghĩ cần phải check lại logic pagination vì data đang bị trùng
+ - [I think] [we should] [recheck pagination logic] [because] [data] [is duplicated]
+
+44. Tối qua tôi nằm suy nghĩ về bug này mà không tìm được hướng fix
+ - [Last night] [I kept thinking] [about this bug] [but] [found] [no fix]
+
+45. Tôi sẽ thử approach khác xem có giải quyết được không
+ - [I will] [try] [another approach] [to see] [if it works]
+
+46. Nếu backend không confirm sớm thì chúng ta không implement tiếp được
+ - [If] [backend] [does not confirm] [soon] [we cannot] [continue implement]
+
+47. Tôi thấy bạn làm rất tốt, chỉ cần refine thêm chút thôi
+ - [You did] [a very good job] [you just] [need] [a bit more] [refinement]
+
+48. Tôi nghĩ team mình nên giảm họp lại để có thêm thời gian làm việc
+ - [I think] [our team] [should] [reduce meetings] [to have] [more working time]
+
+49. Tôi sẵn sàng update lại nếu mọi người thấy chưa hợp lý
+ - [I am] [ready] [to update] [if] [the team] [thinks] [it is not right]
+
+50. Cảm ơn mọi người đã kiên nhẫn hôm nay, thật sự là một ngày dài
+ - [Thank you] [everyone] [for being patient] [today] [it was] [a long day]
