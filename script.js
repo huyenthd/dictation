@@ -100,6 +100,29 @@ if (loadPastedLessonsBtn) {
     });
 }
 
+// Paste from clipboard button
+const pasteFromClipboardBtn = document.getElementById('pasteFromClipboardBtn');
+if (pasteFromClipboardBtn && pasteLessonsTextarea) {
+    pasteFromClipboardBtn.addEventListener('click', async () => {
+        // Try to use Clipboard API
+        try {
+            if (navigator.clipboard && window.isSecureContext) {
+                const text = await navigator.clipboard.readText();
+                if (text) {
+                    pasteLessonsTextarea.value = text;
+                    pasteLessonsTextarea.focus();
+                }
+            } else {
+                // Fallback for older browsers: try execCommand
+                pasteLessonsTextarea.focus();
+                document.execCommand('paste');
+            }
+        } catch (err) {
+            alert('Could not paste from clipboard. Please allow clipboard permissions or paste manually.');
+        }
+    });
+}
+
 // Voice settings
 let voices = [];
 let selectedVoice = null;
