@@ -24,7 +24,7 @@ let typingTimer = null; // Timer for typing timeout
 let isInTypingSession = false; // Track if currently in a typing session
 let hasMatchedInSession = false; // Track if a match was found in current session
 let visitedQuestions = new Set(); // Track which questions have been visited (completed or in progress)
-let completedQuestions = {}; // Store completed questions state {questionIndex: {userAnswers, isCorrect, feedback}}
+let completedQuestions = {}; // Store completed questions state {questionIndex: {userAnswers, isCorrect}}
 
 // Load and display version number
 fetch('version.json?t=' + Date.now())
@@ -46,7 +46,7 @@ const userAnswer = document.getElementById('userAnswer');
 const wordButtons = document.getElementById('wordButtons');
 const skipBtn = document.getElementById('skipBtn');
 const nextBtn = document.getElementById('nextBtn');
-const feedback = document.getElementById('feedback');
+// const feedback = document.getElementById('feedback');
 const questionNumber = document.getElementById('questionNumber');
 const scoreDisplay = document.getElementById('score');
 const finalScore = document.getElementById('finalScore');
@@ -422,9 +422,7 @@ function showQuestion() {
         renderAllVersions(lesson);
 
         // Show completed state
-        feedback.textContent = isCompleted.feedback;
-        feedback.className = isCompleted.isCorrect ? 'correct' : 'incorrect';
-        feedback.classList.remove('hidden');
+        // feedback removed
 
         // Apply correct/incorrect classes to versions based on saved state
         if (isCompleted.isCorrect) {
@@ -482,8 +480,7 @@ function showQuestion() {
         // Render all versions
         renderAllVersions(lesson);
 
-        // Reset feedback and buttons
-        feedback.classList.add('hidden');
+        // Reset buttons (feedback removed)
         nextBtn.classList.add('hidden');
 
         // Show skip button
@@ -859,14 +856,7 @@ skipBtn.addEventListener('click', () => {
         feedback: "⏭️ Question skipped"
     };
 
-    // Show skip feedback
-    feedback.innerHTML = `
-        <div class="feedback-header">
-            <h3>⏭️ Question skipped - Showing correct answers!</h3>
-        </div>
-    `;
-    feedback.className = 'feedback';
-    feedback.classList.remove('hidden');
+    // feedback removed
 
     // Hide skip button and show next button
     skipBtn.style.display = 'none';
@@ -925,7 +915,7 @@ function checkVersionAnswer(userAnswer, correctAnswer) {
 // Reset success state (hide feedback, show Next button as hidden by default)
 function resetSuccessState() {
     hasCheckedCurrentQuestion = false;
-    feedback.classList.add('hidden');
+    // feedback removed
     nextBtn.classList.add('hidden');
 }
 
@@ -976,14 +966,7 @@ function checkAllVersionsSuccess() {
             feedback: "🎉 Perfect! All versions are correct!"
         };
 
-        // Show success feedback
-        feedback.innerHTML = `
-            <div class="feedback-header">
-                <h3>🎉 Perfect! All versions are correct!</h3>
-            </div>
-        `;
-        feedback.className = 'feedback correct';
-        feedback.classList.remove('hidden');
+        // feedback removed
 
         // Hide skip button
         skipBtn.style.display = 'none';

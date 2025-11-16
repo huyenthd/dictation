@@ -858,38 +858,6 @@ select:focus {
     transform: translateY(-2px);
 }
 
-.feedback {
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    animation: slideIn 0.5s;
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.feedback.correct {
-    background: #e8f5e9;
-    color: #2e7d32;
-    border: 2px solid #4caf50;
-}
-
-.feedback.incorrect {
-    background: #ffebee;
-    color: #c62828;
-    border: 2px solid #f44336;
-}
 
 .correct-answer {
     margin-top: 10px;
