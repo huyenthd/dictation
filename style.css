@@ -21,7 +21,7 @@
 .vietnamese-text {
     flex: 1 1 auto;
     text-align: center;
-    font-size: 1.15em;
+    font-size: 0.9em;
     min-width: 0;
     padding: 0 8px;
     word-break: break-word;
@@ -162,7 +162,7 @@ body {
     }
 
     .vietnamese-text {
-        font-size: 0.98em;
+        font-size: 0.85em;
         padding: 0 4px;
     }
 
@@ -289,7 +289,7 @@ body {
     }
 
     .vietnamese-text {
-        font-size: 1.2em;
+        font-size: 0.9em;
         padding: 10px;
     }
 }
@@ -476,7 +476,7 @@ h1 {
 }
 
 .vietnamese-text {
-    font-size: 1.8em;
+    font-size: 1.2em;
     color: #000;
     /* changed to black */
     font-weight: bold;
@@ -973,7 +973,7 @@ select:focus {
     }
 
     .vietnamese-text {
-        font-size: 1.4em;
+        font-size: 0.95em;
     }
 
     .word-btn,
