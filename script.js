@@ -1127,7 +1127,24 @@ document.addEventListener('keydown', (e) => {
         clearTimeout(typingTimer);
     }
 
-    // Delay suggestion check by 200ms after last key press
+    // Immediate unique prefix match logic:
+    // If exactly one available word starts with current buffer, select it right away (no 200ms wait)
+    // This satisfies requirement: if only [the] exists, typing 'th' matches immediately.
+    // For multiple candidates (e.g., [the],[thing]) we do NOT select yet; we wait for delayed timer.
+    const wordsAreaImmediate = activeVersionId ? document.getElementById(`words-${activeVersionId}`) : null;
+    if (wordsAreaImmediate) {
+        const availableButtons = Array.from(wordsAreaImmediate.querySelectorAll('.word-btn:not(:disabled)'));
+        const prefixMatchesNow = availableButtons.filter(btn => btn.textContent.toLowerCase().startsWith(typingBuffer));
+        if (prefixMatchesNow.length === 1 && typingBuffer.length >= 1) {
+            const matchBtn = prefixMatchesNow[0];
+            const wordIndex = parseInt(matchBtn.dataset.wordIndex);
+            selectWord(matchBtn.textContent, matchBtn, activeVersionId, wordIndex);
+            // Mark match found for this session
+            hasMatchedInSession = true;
+        }
+    }
+
+    // Delay suggestion check by 500ms after last key press
     typingTimer = setTimeout(() => {
         // Only try to match if no match has been found in this session yet
         if (!hasMatchedInSession) {
@@ -1140,7 +1157,7 @@ document.addEventListener('keydown', (e) => {
         setTimeout(() => {
             endTypingSession();
         }, 100);
-    }, 200);
+    }, 500);
 });
 
 // Show typing indicator popup
@@ -1189,16 +1206,15 @@ function tryMatchWord() {
         }
     }
 
-    // If only one prefix match exists, select it immediately (even with 1 character)
-    if (prefixMatches.length === 1) {
-        const match = prefixMatches[0];
-        selectWord(match.button.textContent, match.button, activeVersionId, match.wordIndex);
-        return true;
+    // Unique prefix selection removed here (handled immediately in keydown handler before delay).
+    // Multiple prefix matches are intentionally NOT auto-selected until user types more *or* delay triggers; here we still avoid selecting.
+    if (prefixMatches.length > 1) {
+        // Defer selection; allow user to add more characters or let delayed timer eventually pick first.
+        return false;
     }
 
-    // If multiple prefix matches, wait for at least 2 characters
-    if (prefixMatches.length > 1 && typingBuffer.length >= 2) {
-        // Select the first match (shortest or first in order)
+    // If exactly one prefix match and we've reached here (e.g., after delay without immediate selection due to race), select it.
+    if (prefixMatches.length === 1) {
         const match = prefixMatches[0];
         selectWord(match.button.textContent, match.button, activeVersionId, match.wordIndex);
         return true;
