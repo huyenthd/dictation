@@ -1,0 +1,59 @@
+1. Chúng ta cần phân tách rõ ràng giữa business logic và presentation layer để tránh rủi ro khi mở rộng hệ thống
+ - [We] [need] [to] [separate] [business] [logic] [from] [the] [presentation] [layer] [to] [reduce] [risks] [when] [scaling] [the] [system]
+
+2. Bạn giúp tôi kiểm tra xem request này có đang bị throttled bởi API gateway không
+ - [Please] [check] [if] [this] [request] [is] [being] [throttled] [by] [the] [API] [gateway]
+
+3. Tôi nghĩ chúng ta nên cân nhắc chuyển một phần xử lý sang event-driven để giảm load lên service chính
+ - [We] [should] [consider] [moving] [some] [processing] [to] [an] [event-driven] [architecture] [to] [reduce] [load] [on] [the] [main] [service]
+
+4. Đoạn code này nên được wrap trong transaction để đảm bảo tính nhất quán dữ liệu
+ - [This] [code] [should] [be] [wrapped] [in] [a] [transaction] [to] [ensure] [data] [consistency]
+
+5. Service này cần được implement cơ chế fallback trong trường hợp upstream timeout
+ - [This] [service] [needs] [a] [fallback] [mechanism] [in] [case] [the] [upstream] [times] [out]
+
+6. Bạn có thể giúp tôi xem lại memory footprint của tiến trình này không
+ - [Can] [you] [help] [me] [review] [the] [memory] [footprint] [of] [this] [process]
+
+7. Chúng ta nên encrypt dữ liệu này trước khi ghi vào persistent storage
+ - [We] [should] [encrypt] [this] [data] [before] [writing] [it] [to] [persistent] [storage]
+
+8. Tầng này nên có thêm centralized logging để dễ dàng monitor sự cố trong môi trường production
+ - [This] [layer] [should] [have] [centralized] [logging] [to] [help] [monitor] [issues] [in] [production]
+
+9. Delay xảy ra ở bước này cho thấy khả năng có bottleneck ở thread pool
+ - [The] [delay] [here] [suggests] [there] [may] [be] [a] [bottleneck] [in] [the] [thread] [pool]
+
+10. Chúng ta cần đánh giá rủi ro bảo mật trước khi expose endpoint này ra bên ngoài
+ - [We] [need] [to] [assess] [the] [security] [risk] [before] [exposing] [this] [endpoint] [externally]
+
+11. Nếu service này không đáp ứng SLA hiện tại, chúng ta có thể cần scale horizontally
+ - [If] [this] [service] [cannot] [meet] [the] [current] [SLA] [we] [may] [need] [to] [scale] [horizontally]
+
+12. Tôi nghĩ chúng ta nên thêm checksum để đảm bảo dữ liệu không bị thay đổi trong quá trình truyền
+ - [We] [should] [add] [a] [checksum] [to] [ensure] [data] [is] [not] [altered] [during] [transmission]
+
+13. Module này đang làm quá nhiều việc, chúng ta cần áp dụng lại nguyên tắc single responsibility
+ - [This] [module] [is] [doing] [too] [much] [we] [should] [apply] [the] [single] [responsibility] [principle]
+
+14. Bạn giúp tôi xem lại performance chart vì có dấu hiệu CPU bị spike bất thường
+ - [Please] [check] [the] [performance] [chart] [as] [there] [are] [signs] [of] [abnormal] [CPU] [spikes]
+
+15. Rule mới của security yêu cầu chúng ta rotate key thường xuyên hơn
+ - [The] [new] [security] [rule] [requires] [us] [to] [rotate] [keys] [more] [frequently]
+
+16. Để đảm bảo tính ổn định, chúng ta nên tách workload này sang queue-based processing
+ - [To] [ensure] [stability] [we] [should] [move] [this] [workload] [to] [a] [queue-based] [processing] [model]
+
+17. Task này bị delay vì dependency upstream chưa cung cấp schema mới
+ - [This] [task] [is] [delayed] [because] [the] [upstream] [dependency] [has] [not] [provided] [the] [new] [schema]
+
+18. Chúng ta nên giới hạn kích thước payload để giảm nguy cơ bị tấn công qua large request
+ - [We] [should] [limit] [payload] [size] [to] [reduce] [the] [risk] [of] [attacks] [via] [large] [requests]
+
+19. Hãy check lại concurrency level vì có thể gây ra deadlock dưới tải cao
+ - [Please] [recheck] [the] [concurrency] [level] [as] [it] [may] [cause] [deadlocks] [under] [high] [load]
+
+20. Chúng ta cần bổ sung isolation cho môi trường UAT để tránh ảnh hưởng đến các team khác
+ - [We] [need] [to] [add] [isolation] [to] [the] [UAT] [environment] [to] [avoid] [impacting] [other] [teams]

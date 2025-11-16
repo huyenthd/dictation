@@ -1,0 +1,59 @@
+1. Tôi nghĩ chúng ta nên xem lại cách format dòng này vì chỉ cần lệch spacing là test sẽ fail ngay
+ - [We] [should] [review] [this] [line’s] [formatting] [because] [even] [a] [small] [spacing] [change] [could] [break] [the] [tests]
+
+2. Flow này nhìn qua thì ổn nhưng tôi sợ rằng edge case phía backend chưa được handle đầy đủ
+ - [This] [flow] [looks] [fine] [but] [I’m] [concerned] [that] [some] [backend] [edge] [cases] [aren’t] [fully] [handled]
+
+3. Bạn thử dùng approach cũ xem còn gặp regression giống như lần trước không
+ - [Try] [using] [the] [previous] [approach] [to] [see] [if] [the] [same] [regression] [still] [happens]
+
+4. Tôi nghĩ variable này đặt tên chưa rõ vì nó không phản ánh đúng intent của đoạn code
+ - [This] [variable] [name] [isn’t] [very] [clear] [as] [it] [doesn’t] [reflect] [the] [intended] [behavior]
+
+5. Khi remove dev switch thì nhớ update default value trong constructor nhé
+ - [When] [removing] [the] [dev] [switch] [remember] [to] [update] [the] [default] [value] [in] [the] [constructor]
+
+6. Chỗ này bạn dùng for cũng được nhưng dễ gây hiểu nhầm vì logic hơi rối
+ - [A] [for] [loop] [works] [here] [but] [it] [might] [cause] [confusion] [because] [the] [logic] [is] [a] [bit] [complex]
+
+7. Tôi thử hết cách rồi nhưng format hiện tại có vẻ là tối ưu nhất để tránh assert thất bại
+ - [I] [tried] [all] [options] [but] [this] [format] [seems] [to] [be] [the] [best] [way] [to] [avoid] [assert] [failures]
+
+8. UI này buộc phải giữ một dòng vì nếu xuống hàng sẽ sai hoàn toàn so với behavior thật
+ - [This] [UI] [must] [stay] [on] [a] [single] [line] [because] [wrapping] [will] [break] [the] [actual] [behavior]
+
+9. Làm kiểu này vẫn được nhưng readability còn kém hơn cách hiện tại
+ - [This] [approach] [works] [but] [the] [readability] [is] [even] [worse] [than] [the] [current] [one]
+
+10. Đây chính là lý do triple-quote được tạo ra, để tránh lỗi spacing khó nhìn thấy
+ - [That’s] [why] [triple] [quotes] [exist] [to] [avoid] [subtle] [spacing] [issues]
+
+11. Bạn thử check xem feature flag này có bị stale không vì tôi thấy behavior không khớp nữa
+ - [Please] [check] [if] [this] [feature] [flag] [is] [stale] [because] [the] [behavior] [no] [longer] [matches]
+
+12. Khi team backend update schema mới thì nhớ regenerate model bên mình
+ - [When] [the] [backend] [team] [updates] [the] [schema] [remember] [to] [regenerate] [our] [model]
+
+13. Tôi nhận thấy luồng này chạy bất đồng bộ nên log bị out-of-order là chuyện bình thường
+ - [This] [flow] [runs] [asynchronously] [so] [out-of-order] [logs] [are] [expected]
+
+14. Nếu bạn chưa chắc về flow encryption thì tôi có thể walkthrough nhanh cho bạn
+ - [If] [you’re] [not] [sure] [about] [the] [encryption] [flow] [I] [can] [walk] [you] [through] [it] [quickly]
+
+15. PR này khá lớn, tôi đề xuất split thành 2 phần để review dễ hơn
+ - [This] [PR] [is] [quite] [large] [I] [suggest] [splitting] [it] [into] [two] [parts] [for] [easier] [review]
+
+16. Code path này hiếm khi chạy nhưng vẫn nên handle phòng trường hợp user spam thao tác
+ - [This] [code] [path] [rarely] [runs] [but] [we] [should] [handle] [it] [in] [case] [the] [user] [spams] [the] [action]
+
+17. Bạn có thể explain giúp tôi tại sao cần switch logic trên ViewHolder thay vì thêm EmptyV2 không
+ - [Can] [you] [explain] [why] [we] [need] [to] [switch] [logic] [on] [the] [ViewHolder] [instead] [of] [adding] [EmptyV2]
+
+18. Tôi vừa thấy backend trả về thêm trường mới, chắc chúng ta cần map lại DTO
+ - [Backend] [just] [added] [a] [new] [field] [so] [we] [likely] [need] [to] [update] [the] [DTO] [mapping]
+
+19. Hôm nay tôi hơi hoang mang vì được phép chỉnh trực tiếp vào PROD config
+ - [I’m] [a] [bit] [surprised] [that] [I’m] [allowed] [to] [change] [the] [PROD] [config] [directly]
+
+20. Bạn nghĩ idea này có hợp lý không hay chúng ta nên chọn approach đơn giản hơn
+ - [Do] [you] [think] [this] [idea] [makes] [sense] [or] [should] [we] [go] [with] [a] [simpler] [approach]

@@ -1,0 +1,59 @@
+1. Chúng ta cần đánh giá xem việc thêm tầng cache có làm thay đổi tính nhất quán dữ liệu hay không
+ - [We] [need] [to] [assess] [whether] [adding] [a] [cache] [layer] [will] [impact] [data] [consistency]
+
+2. Service này có thể gặp tình trạng overload nếu không giới hạn số lượng connection đồng thời
+ - [This] [service] [may] [become] [overloaded] [if] [we] [don’t] [limit] [the] [number] [of] [concurrent] [connections]
+
+3. Tôi đề xuất phân tách domain model khỏi API model để tránh rò rỉ cấu trúc nội bộ
+ - [I] [suggest] [separating] [the] [domain] [model] [from] [the] [API] [model] [to] [avoid] [leaking] [internal] [structures]
+
+4. Đoạn logic này nên được chạy trong background task để không chặn luồng chính
+ - [This] [logic] [should] [run] [in] [a] [background] [task] [to] [avoid] [blocking] [the] [main] [thread]
+
+5. Bạn kiểm tra giúp xem load balancer có đang thực hiện health check đúng chu kỳ không
+ - [Please] [verify] [whether] [the] [load] [balancer] [is] [performing] [health] [checks] [at] [the] [correct] [intervals]
+
+6. Để đảm bảo tính bảo mật, chúng ta nên bật cơ chế token binding
+ - [To] [ensure] [security] [we] [should] [enable] [token] [binding]
+
+7. Request này chiếm quá nhiều thời gian ở network layer, có thể do DNS lookup chậm
+ - [This] [request] [spends] [too] [much] [time] [in] [the] [network] [layer] [possibly] [due] [to] [slow] [DNS] [lookup]
+
+8. Chúng ta cần mô phỏng lại traffic để kiểm tra liệu hệ thống có chịu được peak load hay không
+ - [We] [need] [to] [simulate] [traffic] [to] [verify] [if] [the] [system] [can] [handle] [peak] [load]
+
+9. Module này cần transaction isolation cao hơn để tránh dirty read
+ - [This] [module] [requires] [a] [higher] [transaction] [isolation] [level] [to] [prevent] [dirty] [reads]
+
+10. Việc phân tán dữ liệu qua nhiều shard có thể làm phức tạp quá trình query
+ - [Distributing] [data] [across] [multiple] [shards] [may] [complicate] [the] [query] [process]
+
+11. Chúng ta phải đảm bảo rằng tất cả endpoint đều hỗ trợ idempotency cho các request quan trọng
+ - [We] [must] [ensure] [that] [all] [endpoints] [support] [idempotency] [for] [critical] [requests]
+
+12. Bạn xem giúp tôi phần retry policy có đang gây ra request storm không
+ - [Please] [check] [if] [the] [retry] [policy] [is] [causing] [a] [request] [storm]
+
+13. Logging ở mức debug đang gây tốn quá nhiều I/O trên production
+ - [Debug] [level] [logging] [is] [causing] [too] [much] [I/O] [on] [production]
+
+14. Chúng ta nên cân nhắc bật strict schema validation để tránh lỗi payload sai định dạng
+ - [We] [should] [consider] [enabling] [strict] [schema] [validation] [to] [prevent] [malformed] [payload] [errors]
+
+15. Pipeline CI/CD hiện tại có quá nhiều step blocking, cần tối ưu lại
+ - [The] [current] [CI/CD] [pipeline] [has] [too] [many] [blocking] [steps] [we] [need] [to] [optimize] [it]
+
+16. Thời gian phản hồi của service tăng cao có thể do garbage collector chạy quá thường xuyên
+ - [The] [increased] [response] [time] [may] [be] [due] [to] [the] [garbage] [collector] [running] [too] [frequently]
+
+17. Chúng ta cần phân tích thêm trace log để xác định điểm nghẽn thực sự
+ - [We] [need] [to] [analyze] [the] [trace] [logs] [further] [to] [identify] [the] [actual] [bottleneck]
+
+18. System này thiếu cơ chế back-pressure nên rất dễ bị overload
+ - [This] [system] [is] [missing] [a] [back-pressure] [mechanism] [which] [makes] [it] [prone] [to] [overload]
+
+19. Chúng ta cần xem xét việc sử dụng message queue để giảm độ trễ khi xử lý batch
+ - [We] [should] [consider] [using] [a] [message] [queue] [to] [reduce] [latency] [in] [batch] [processing]
+
+20. Endpoint này trả về dữ liệu quá lớn, có thể cần pagination hoặc streaming
+ - [This] [endpoint] [returns] [too] [much] [data] [we] [may] [need] [pagination] [or] [streaming]

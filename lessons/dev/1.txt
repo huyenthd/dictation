@@ -1,0 +1,60 @@
+1. Tôi nghĩ chúng ta cần đánh giá lại kiến trúc hiện tại vì nó có thể không đáp ứng được khối lượng giao dịch tăng cao
+ - [We] [may] [need] [to] [reassess] [the] [current] [architecture] [as] [it] [might] [not] [handle] [the] [increased] [transaction] [volume]
+
+2. Phần này nên được tách ra thành một domain riêng để tránh vi phạm nguyên tắc separation of concerns
+ - [This] [component] [should] [be] [split] [into] [a] [separate] [domain] [to] [avoid] [violating] [separation] [of] [concerns]
+
+3. Tôi đề xuất thêm bước validation ở server-side để đảm bảo tính toàn vẹn dữ liệu trước khi xử lý
+ - [I] [recommend] [adding] [server-side] [validation] [to] [ensure] [data] [integrity] [before] [processing]
+
+4. Chúng ta cần xem lại cơ chế retry vì nó có thể gây ra double-charging trong một số edge cases
+ - [We] [need] [to] [review] [the] [retry] [mechanism] [as] [it] [may] [cause] [double] [charging] [in] [certain] [edge] [cases]
+
+5. Bạn kiểm tra giúp tôi xem token này có đang được rotate đúng theo yêu cầu bảo mật không
+ - [Please] [verify] [if] [this] [token] [is] [being] [rotated] [according] [to] [the] [security] [requirements]
+
+6. Nếu chúng ta không thêm audit trail thì rất khó truy vết hành vi bất thường của người dùng
+ - [Without] [an] [audit] [trail] [it] [will] [be] [difficult] [to] [trace] [any] [suspicious] [user] [activity]
+
+7. Logic này có thể gây race condition nếu hai request gửi cùng lúc
+ - [This] [logic] [may] [cause] [a] [race] [condition] [if] [two] [requests] [arrive] [simultaneously]
+
+8. Tôi nghĩ chúng ta nên abstractions hóa tầng này để dễ dàng thay đổi provider trong tương lai
+ - [We] [should] [abstract] [this] [layer] [to] [make] [it] [easier] [to] [switch] [providers] [in] [the] [future]
+
+9. Hãy kiểm tra xem module này có vi phạm compliance guideline nào của NAB không
+ - [Please] [check] [if] [this] [module] [violates] [any] [NAB] [compliance] [guidelines]
+
+10. Pipeline đang mất quá nhiều thời gian ở bước security scanning, chúng ta cần tối ưu lại
+ - [The] [pipeline] [spends] [too] [much] [time] [on] [security] [scanning] [we] [need] [to] [optimize] [it]
+
+11. Chúng ta cần đánh giá lại toàn bộ error-handling flow vì hiện tại nó chưa phản hồi chính xác cho từng loại lỗi
+ - [We] [need] [to] [re-evaluate] [the] [entire] [error-handling] [flow] [as] [it] [does] [not] [properly] [respond] [to] [each] [error] [type]
+
+12. Việc caching không hợp lý ở tầng này có thể khiến dữ liệu bị stale và gây hiểu nhầm cho người dùng
+ - [Improper] [caching] [at] [this] [layer] [may] [result] [in] [stale] [data] [and] [confuse] [users]
+
+13. Tôi nghĩ chúng ta nên thêm circuit breaker để tránh request spam khi service downstream bị lỗi
+ - [We] [should] [add] [a] [circuit] [breaker] [to] [prevent] [request] [spikes] [when] [the] [downstream] [service] [fails]
+
+14. Module này có quá nhiều dependency, chúng ta cần refactor để giảm coupling
+ - [This] [module] [has] [too] [many] [dependencies] [we] [need] [to] [refactor] [to] [reduce] [coupling]
+
+15. Bạn kiểm tra giúp xem job chạy nền này có bị rò tài nguyên hay không
+ - [Please] [check] [if] [this] [background] [job] [is] [causing] [any] [resource] [leaks]
+
+16. Tầng này đang có quá nhiều responsibility, mình nên tách nó thành hai service riêng
+ - [This] [layer] [has] [too] [many] [responsibilities] [we] [should] [split] [it] [into] [two] [separate] [services]
+
+17. Chúng ta nên thêm rate-limiter để giảm thiểu nguy cơ bị abuse từ phía client
+ - [We] [should] [add] [a] [rate] [limiter] [to] [reduce] [the] [risk] [of] [client] [abuse]
+
+18. Tôi đề xuất tạo thêm monitoring metric để đo thời gian phản hồi của API
+ - [I] [suggest] [adding] [a] [monitoring] [metric] [to] [track] [API] [response] [time]
+
+19. Phần này cần được chạy async vì chờ đồng bộ sẽ làm chậm toàn bộ giao dịch
+ - [This] [part] [should] [run] [asynchronously] [because] [waiting] [synchronously] [slows] [down] [the] [entire] [transaction]
+
+20. Chúng ta cần benchmark lại service này vì throughput hiện tại không đáp ứng yêu cầu của dự án
+ - [We] [need] [to] [benchmark] [this] [service] [as] [its] [current] [throughput] [does] [not] [meet] [the] [project] [requirements]
+

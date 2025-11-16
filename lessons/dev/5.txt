@@ -1,0 +1,59 @@
+1. Tôi thấy đoạn này có quá nhiều nested conditions, có thể refactor lại để dễ đọc hơn không
+ - [This] [part] [has] [too] [many] [nested] [conditions] [can] [we] [refactor] [it] [to] [improve] [readability]
+
+2. Hình như API trả về không đúng như spec, bạn check lại contract giúp tôi nhé
+ - [It] [seems] [the] [API] [response] [doesn’t] [match] [the] [spec] [please] [check] [the] [contract]
+
+3. Flow này đang phụ thuộc vào timing, nên rất dễ xuất hiện lỗi khó tái hiện
+ - [This] [flow] [relies] [on] [timing] [which] [makes] [it] [prone] [to] [hard-to-reproduce] [issues]
+
+4. Bạn thử compare log ở DEV và SIT xem có mismatch nào không
+ - [Try] [comparing] [the] [logs] [between] [DEV] [and] [SIT] [to] [see] [if] [there] [is] [any] [mismatch]
+
+5. Lúc chạy manual thì không sao, nhưng automation test đang fail, có thể do race condition
+ - [Manual] [testing] [works] [fine] [but] [the] [automation] [test] [fails] [possibly] [due] [to] [a] [race] [condition]
+
+6. Chỗ này tôi nghĩ nên dùng immutable list để tránh thay đổi ngoài ý muốn
+ - [I] [think] [we] [should] [use] [an] [immutable] [list] [here] [to] [avoid] [unexpected] [modifications]
+
+7. Tôi nghi rằng callback này được trigger hai lần, nên logic phía sau bị chạy dư
+ - [I] [suspect] [this] [callback] [is] [being] [triggered] [twice] [causing] [the] [logic] [to] [run] [extra] [steps]
+
+8. Nếu behaviour này không khớp với design spec thì chúng ta nên sync lại với BA
+ - [If] [this] [behavior] [doesn’t] [match] [the] [design] [spec] [we] [should] [sync] [with] [the] [BA]
+
+9. Bạn giúp tôi capture lại toàn bộ payload để xem có field nào bị miss không
+ - [Please] [capture] [the] [entire] [payload] [to] [check] [if] [any] [fields] [are] [missing]
+
+10. Tôi nghĩ việc reuse code từ module cũ có thể gây vấn đề vì context không giống nhau
+ - [Reusing] [code] [from] [the] [old] [module] [might] [cause] [issues] [because] [the] [contexts] [are] [different]
+
+11. Nhờ bạn kiểm tra thử xem UI này có bị ảnh hưởng bởi font scale của device không
+ - [Please] [check] [if] [this] [UI] [is] [affected] [by] [the] [device’s] [font] [scale]
+
+12. Mình nên viết thêm unit test để đảm bảo behaviour này không bị thay đổi sau refactor
+ - [We] [should] [add] [more] [unit] [tests] [to] [ensure] [this] [behavior] [doesn’t] [change] [after] [the] [refactor]
+
+13. Bạn confirm giúp xem flag này có đang được evaluate trong đúng scope chưa
+ - [Please] [confirm] [if] [this] [flag] [is] [being] [evaluated] [in] [the] [correct] [scope]
+
+14. Việc này không urgent lắm, bạn có thể để vào cuối sprint cũng được
+ - [This] [isn’t] [very] [urgent] [you] [can] [push] [it] [to] [the] [end] [of] [the] [sprint]
+
+15. Coi chừng trường hợp này bị leak nếu coroutine không được cancel đúng lúc
+ - [Be] [careful] [because] [this] [may] [cause] [a] [leak] [if] [the] [coroutine] [isn’t] [cancelled] [properly]
+
+16. Tôi thấy SEA region đang trả về response khác AUS region, nên logic parse bị sai
+ - [The] [SEA] [region] [returns] [a] [different] [response] [than] [the] [AUS] [region] [so] [the] [parsing] [logic] [breaks]
+
+17. Đoạn code này khá nhạy cảm, tôi nghĩ chúng ta nên thêm defensive programming
+ - [This] [code] [section] [is] [sensitive] [we] [should] [add] [more] [defensive] [programming]
+
+18. Khi chạy ở SIT thì response time tăng rất cao, có thể do environment-level throttling
+ - [In] [SIT] [the] [response] [time] [increases] [significantly] [possibly] [due] [to] [environment-level] [throttling]
+
+19. Tôi recommend thêm logging tạm thời để xem user đang bị stuck ở bước nào
+ - [I] [recommend] [adding] [temporary] [logging] [to] [see] [where] [the] [user] [is] [getting] [stuck]
+
+20. Phần này hơi tricky vì behaviour phụ thuộc vào trạng thái trước đó của app
+ - [This] [part] [is] [tricky] [because] [the] [behavior] [depends] [on] [the] [app’s] [previous] [state]
