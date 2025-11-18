@@ -448,12 +448,61 @@ h1 {
 .progress-info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
     padding: 15px;
     background: #f8f9fa;
     border-radius: 10px;
     font-weight: bold;
     color: #667eea;
+    gap: 12px;
+}
+
+.btn-jump {
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+    flex-shrink: 0;
+}
+
+.btn-jump:hover {
+    background: #5568d3;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-jump:active {
+    transform: scale(0.95);
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+.shake {
+    animation: shake 0.3s ease-in-out;
 }
 
 .question-section {

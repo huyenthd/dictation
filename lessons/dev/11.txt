@@ -1,0 +1,149 @@
+1. Flow này có vẻ lệch requirement nên chúng ta cần review lại
+ - [This flow] [seems] [different from] [the requirement] [so] [we need] [to review] [it again]
+
+2. Backend đổi schema mà không thông báo khiến tôi debug mãi
+ - [Backend] [changed the schema] [without notice] [so] [I was] [debugging] [for hours]
+
+3. Tôi gặp lỗi lạ quá, bạn rảnh thì giúp tôi check chút
+ - [I have] [a strange issue] [can you] [help me] [check it] [when you’re] [free]
+
+4. Nhờ bạn kiểm tra xem flag này có bật đúng môi trường không
+ - [Please] [check] [if this flag] [is enabled] [in the] [correct environment]
+
+5. Hôm nay tôi hơi mệt, chắc vì tối qua ngủ trễ
+ - [I am] [a bit tired] [today] [probably] [because] [I slept] [too late] [last night]
+
+6. Tôi phụ trách UI, nếu có lỗi nhìn thì ping tôi nhé
+ - [I am] [in charge of] [the UI] [so] [please ping me] [if] [you see] [any visual issue]
+
+7. Lỗi này sửa chỗ này xong lại xuất hiện ở chỗ khác
+ - [This bug] [keeps moving] [fix here] [then] [it appears] [somewhere else] [again]
+
+8. Chúng ta cần hỗ trợ nhau để kịp deadline
+ - [We need] [to support] [each other] [so we] [can finish] [on time]
+
+9. Tôi rất mong chờ bạn demo tính năng chiều nay
+ - [I] [look forward to] [your demo] [of this] [feature] [this afternoon]
+
+10. Backend chưa xong nên tôi bị chặn không làm tiếp được
+ - [Backend] [is not ready] [so] [I am blocked] [and cannot] [move forward]
+
+11. Nhìn task list đúng kiểu “quá trời việc”
+ - [The task list] [is full of] [too many] [items] [and I] [feel like] [fainting]
+
+12. Kẹt xe nên tôi join họp trễ, xin lỗi mọi người
+ - [I was] [stuck in] [traffic] [so] [I joined] [the meeting] [late]
+
+13. Không check null chỗ này thì rất dễ crash
+ - [If we] [don’t check] [null here] [it can] [easily] [crash]
+
+14. Tôi vui vì task này cuối cùng cũng pass SIT
+ - [I am] [really happy] [because] [this task] [finally] [passed] [in SIT]
+
+15. Tuần này quá nhiều meeting nên tôi hơi stress
+ - [There are] [too many] [meetings this week] [so] [I feel] [a bit stressed]
+
+16. Backend update không báo trước, đúng kiểu bất ngờ
+ - [Backend] [updated] [without notice] [so it’s] [a surprise] [to everyone]
+
+17. Tôi xem phim tới 2 giờ sáng nên giờ hơi đuối
+ - [I watched] [a movie] [until 2 AM] [so now] [I am] [very tired]
+
+18. Chúng ta nên bàn thêm để tránh hiểu nhầm
+ - [We should] [discuss more] [to avoid] [any future] [misunderstanding]
+
+19. Hard-code kiểu này thì rất khó maintain
+ - [Hard-coding] [this part] [will make] [it very] [hard to] [maintain later]
+
+20. Nhờ bạn update Jira để cả team theo dõi
+ - [Please] [update Jira] [so the team] [can track] [the progress]
+
+21. Tôi test manual ok nhưng automation vẫn fail
+ - [I tested] [manually] [but the] [automation test] [is still] [failing]
+
+22. Thời tiết đẹp quá, ước gì được làm việc ở quán cà phê
+ - [The weather] [is so nice] [I wish] [I could] [work at] [a café] [today]
+
+23. Tôi buồn ngủ quá chắc phải lấy ly cà phê thứ hai
+ - [I am] [very sleepy] [so I] [need my] [second coffee] [for today]
+
+24. Bạn có thể giải thích lại flow cho tôi rõ hơn không
+ - [Can you] [explain the] [flow again] [so I] [can understand] [it better]
+
+25. Tôi vừa push fix xong, bạn pull về nha
+ - [I just] [pushed the] [fix] [please] [pull it] [to your] [branch]
+
+26. Tập gym xong hơi mệt nhưng tinh thần vẫn ổn
+ - [I went] [to the gym] [this morning] [so I] [feel tired] [but still] [in a good mood]
+
+27. Đây là regression từ ticket cũ, cần check lại history
+ - [This is] [a regression] [from an] [old ticket] [we need] [to check] [the history]
+
+28. Tôi đói quá, ai muốn order chung không
+ - [I am] [really hungry] [does anyone] [want to] [order food] [together]
+
+29. Nhờ bạn confirm logic này với BA giúp tôi
+ - [Please] [confirm this] [logic with] [the BA] [to avoid] [confusion]
+
+30. Tôi hơi mất tập trung hôm nay
+ - [I am] [a bit] [unfocused today] [maybe] [because] [I was] [up late]
+
+31. Phần này nên optimize lại cho nhanh hơn
+ - [This part] [should be] [optimized] [to make] [it run] [faster]
+
+32. Tôi đang hỏi QA về tình trạng test
+ - [I am] [checking with] [QA] [about the] [test status]
+
+33. Rule validation chỗ này hình như bị mismatch
+ - [This validation] [rule seems] [to have] [a mismatch]
+
+34. Tuần này team phối hợp quá tốt, tôi rất vui
+ - [The team] [worked really] [well this] [week] [I am] [very happy]
+
+35. Nhớ verify trên SIT trước khi deploy UAT
+ - [Please] [verify it] [in SIT] [before] [deploying] [to UAT]
+
+36. Tôi hơi đau đầu nên code chậm một chút
+ - [I have] [a headache] [today] [so I] [am coding] [slowly]
+
+37. Task này bị chặn vì backend chưa update
+ - [This task] [is blocked] [because] [backend has] [not updated] [yet]
+
+38. Tôi vui vì hôm nay nhận lương
+ - [I am] [very happy] [because] [I got] [my salary] [today]
+
+39. Không test kỹ chỗ này thì dễ có lỗi production
+ - [If we] [don’t test] [carefully here] [there could] [be issues] [in production]
+
+40. Tôi hơi bối rối vì logic khác với lời BA nói
+ - [I am] [confused] [because] [this logic] [is different] [from what] [the BA] [said]
+
+41. Nhờ bạn review phần này kỹ vì hơi nhạy cảm
+ - [Please] [review this] [part carefully] [because] [it is] [sensitive]
+
+42. Tôi đang cố hoàn thành task trước giờ ăn trưa
+ - [I am] [trying to] [finish this] [task before] [lunch time]
+
+43. Tôi hơi buồn hôm nay vì không ngủ đủ
+ - [I feel] [a bit sad] [today] [maybe] [because] [I had] [little sleep]
+
+44. Nhờ bạn check version API trên DEV
+ - [Please] [check the] [API version] [running] [in DEV]
+
+45. Tôi hơi thất vọng vì thiết kế đổi liên tục
+ - [I am] [a bit] [disappointed] [because] [the design] [keeps changing]
+
+46. Cuối tuần tôi muốn nghỉ xíu, mong không ai ping gấp
+ - [I want] [to rest] [this weekend] [and hope] [no one] [pings me] [urgently]
+
+47. Team xứng đáng được thưởng vì làm việc quá tốt
+ - [The team] [deserves] [a reward] [because] [we worked] [so well] [this week]
+
+48. Tôi đang check lại logic vì behaviour hơi lạ
+ - [I am] [reviewing] [the logic] [because] [some behavior] [seems strange]
+
+49. Tôi mệt nhưng vẫn cố deliver đúng hạn
+ - [I am] [tired] [but I] [will deliver] [on time]
+
+50. Cảm ơn mọi người đã hỗ trợ tôi suốt tuần này
+ - [Thank you] [everyone] [for your] [support this] [week] [I really] [appreciate it]

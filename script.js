@@ -63,6 +63,83 @@ const pasteLessonsModal = document.getElementById('pasteLessonsModal');
 const closePasteLessons = document.getElementById('closePasteLessons');
 const pasteLessonsTextarea = document.getElementById('pasteLessonsTextarea');
 const loadPastedLessonsBtn = document.getElementById('loadPastedLessonsBtn');
+const jumpBtn = document.getElementById('jumpBtn');
+const jumpModal = document.getElementById('jumpModal');
+const jumpInput = document.getElementById('jumpInput');
+const confirmJumpBtn = document.getElementById('confirmJumpBtn');
+
+// Jump to question feature
+if (jumpBtn) {
+    jumpBtn.addEventListener('click', () => {
+        jumpModal.classList.remove('hidden');
+        jumpInput.value = '';
+        jumpInput.max = lessons.length;
+        jumpInput.focus();
+    });
+}
+
+if (confirmJumpBtn) {
+    confirmJumpBtn.addEventListener('click', () => {
+        const targetQuestion = parseInt(jumpInput.value);
+
+        // Validate input
+        if (!targetQuestion || targetQuestion < 1 || targetQuestion > lessons.length) {
+            // Shake animation for invalid input
+            jumpInput.classList.add('shake');
+            setTimeout(() => {
+                jumpInput.classList.remove('shake');
+            }, 300);
+            return;
+        }
+
+        // Convert to 0-based index
+        const targetIndex = targetQuestion - 1;
+
+        // Skip all questions before target (if not already completed)
+        for (let i = currentQuestionIndex; i < targetIndex; i++) {
+            if (!completedQuestions[i]) {
+                // Mark question as skipped
+                completedQuestions[i] = {
+                    userAnswers: {},
+                    isCorrect: false,
+                    feedback: "⏭️ Question skipped"
+                };
+                visitedQuestions.add(i);
+            }
+        }
+
+        // Jump to target question
+        currentQuestionIndex = targetIndex;
+        visitedQuestions.add(targetIndex);
+
+        // Close modal and show question
+        jumpModal.classList.add('hidden');
+        showQuestion();
+    });
+}
+
+// Close jump modal when clicking outside
+if (jumpModal) {
+    jumpModal.addEventListener('click', (e) => {
+        if (e.target === jumpModal) {
+            jumpModal.classList.add('hidden');
+        }
+    });
+}
+
+// Allow Enter key to confirm jump, Escape to close
+if (jumpInput) {
+    jumpInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            confirmJumpBtn.click();
+        } else if (e.key === 'Escape') {
+            e.preventDefault();
+            jumpModal.classList.add('hidden');
+        }
+    });
+}
+
 // Feature: Click title 3 times to show paste modal
 let titleClickCount = 0;
 let titleClickTimer = null;
@@ -1001,7 +1078,7 @@ restartBtn.addEventListener('click', () => {
 // Keyboard typing support
 document.addEventListener('keydown', (e) => {
     // Ignore if modal is open
-    if (!helpModal.classList.contains('hidden')) {
+    if (!helpModal.classList.contains('hidden') || !jumpModal.classList.contains('hidden')) {
         return;
     }
 

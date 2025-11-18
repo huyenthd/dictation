@@ -48,6 +48,7 @@
             <div class="progress-info">
                 <span id="questionNumber">Question 1/5</span>
                 <span id="score">Score: 0</span>
+                <button id="jumpBtn" class="btn-jump" title="Jump to question">⚡</button>
             </div>
 
             <!-- Navigation arrows row -->
@@ -103,6 +104,19 @@
                         <button id="pasteFromClipboardBtn" class="btn btn-clear" type="button">Paste</button>
                         <button id="loadPastedLessonsBtn" class="btn btn-check">Load</button>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jump to question modal -->
+        <div id="jumpModal" class="modal hidden">
+            <div class="modal-content" style="max-width: 300px;">
+                <div class="modal-body" style="padding: 30px; text-align: center;">
+                    <input type="number" id="jumpInput" min="1"
+                        style="width:100%;font-size:1.5em;padding:15px;border-radius:10px;border:2px solid #667eea;text-align:center;margin-bottom:20px;"
+                        placeholder="Question #" />
+                    <button id="confirmJumpBtn" class="btn btn-check"
+                        style="width: 100%; font-size: 1.2em; padding: 15px;">OK</button>
                 </div>
             </div>
         </div>
